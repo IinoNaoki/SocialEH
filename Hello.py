@@ -186,15 +186,15 @@ print vi.policy
 print vi.iter
 # print vi.V
 
-C M E Q_H Q_L
+#C M E Q_H Q_L
 
-c-m, e-qh, e-ql, qh-ql
+#c-m, e-qh, e-ql, qh-ql
 
-def Save_V(_poli):
-    #save C-M
-    for fixE in range(CON_ESize):
-        for fixQH in range(CON_QSize_H):
-            for fixQL in range(CON_QSize_L):
+# def Save_V(_poli):
+#     #save C-M
+#     for fixE in range(CON_ESize):
+#         for fixQH in range(CON_QSize_H):
+#             for fixQL in range(CON_QSize_L):
                 
 fixC = 7
 fixM = 1
