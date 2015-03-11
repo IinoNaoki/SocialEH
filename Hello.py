@@ -17,13 +17,11 @@ import mdptoolbox
 import numpy as np
 from scipy.sparse import csr_matrix as sparse
 
-CON_CSize = 10 + 1 + 10
-CON_MSize = 10
-CON_ESize = 10
-CON_QSize_H = 8
-CON_QSize_L = 8
+SET_IDLE = [0]
+SET_CHARGER = [1,2,3,4,5]
+SET_MESSENGER = [6,7,8,9,10]
 
-CON_CSize = 5 + 1 + 5
+CON_CSize = len(SET_IDLE) + len(SET_CHARGER) + len(SET_MESSENGER)
 CON_MSize = 5
 CON_ESize = 5
 CON_QSize_H = 2
@@ -136,17 +134,27 @@ def Get_Overall_mat(act):
     return overkron
 
 
-def Reward(_c,_m,_e,_qh,_ql, action):
+def Reward(_c, _m, _e, _qh, _ql, action):
     if action == A_IDLE:
-        return 0.0
-    elif action == A_GETE and _c in [0,1,2,3,4]:
-        return -0.5
-    elif action == A_QH and _qh>0 and _c in [6,7,8,9,10]:
-        return 2.0
-    elif action == A_QL and _ql>0 and _c in [6,7,8,9,10]:
-        return 0.7
+        return 0.0 - 0.6*_qh - 0.4*_ql
+    elif action == A_GETE:
+        if _c in SET_CHARGER:
+            return -0.1 - 0.6*_qh - 0.4*_ql # change to price of charger
+        else:
+            return -65536.0 
+        #
+    elif action == A_QH:
+        if (_qh>0 and _e>0 and (_c in SET_MESSENGER)):
+            return 2.0 - 0.6*_qh - 0.4*_ql
+        else:
+            return -65535.0
+    elif action == A_QL:
+        if (_ql>0 and _e>0 and (_c in SET_MESSENGER)):
+            return 0.7 - 0.6*_qh - 0.4*_ql
+        else:
+            return -65535.0
     else:
-        return 0.0
+        return 0.0 - 0.6*_qh - 0.4*_ql
 
 R = np.zeros((CON_DIM,len(SET_A)))
 cnt = 0
@@ -158,7 +166,8 @@ for ic in range(CON_CSize):
                     for action in SET_A:
                         R[cnt][action] = Reward(ic,im,ie,iqh,iql, action)
                     cnt = cnt + 1
-                    
+### C --> M --> E --> Qh --> Ql                    
+
 # R = np.random.randint(0,5,(CON_DIM,len(SET_A)))
 print R
 print R.shape
@@ -173,6 +182,41 @@ P = np.array([ Get_Overall_mat(A_IDLE), Get_Overall_mat(A_GETE), Get_Overall_mat
 vi = mdptoolbox.mdp.ValueIteration(P, R, 0.99)
 vi.run()
 print "Done"
-# print vi.policy
+print vi.policy
 print vi.iter
 # print vi.V
+
+C M E Q_H Q_L
+
+c-m, e-qh, e-ql, qh-ql
+
+def Save_V(_poli):
+    #save C-M
+    for fixE in range(CON_ESize):
+        for fixQH in range(CON_QSize_H):
+            for fixQL in range(CON_QSize_L):
+                
+fixC = 7
+fixM = 1
+fixE = 1
+for Q_h in range(CON_QSize_H):
+    for Q_l in range(CON_QSize_L):
+        _ind = fixC*CON_MSize*CON_ESize*CON_QSize_H*CON_QSize_L + \
+                fixM*CON_ESize*CON_QSize_H*CON_QSize_L+ \
+                fixE*CON_QSize_H*CON_QSize_L+ \
+                Q_h*CON_QSize_L+ \
+                Q_l
+        print vi.policy[_ind],
+        print '  ',
+    print
+
+# def Pin_to_2D(_show_dims):
+# ### C --> M --> E --> Qh --> Ql
+#     _ref_set = ['C','M','E','Q_h','Q_l']
+# 
+# CM
+# 
+# E*(CON_QH)*(CON_QL) + Qh*(CON_QL) + Ql
+
+
+    
