@@ -195,28 +195,57 @@ print vi.iter
 #     for fixE in range(CON_ESize):
 #         for fixQH in range(CON_QSize_H):
 #             for fixQL in range(CON_QSize_L):
-                
-fixC = 7
-fixM = 1
+#                 for C_var in range(CON_CSize):
+#                     for M_var in range(CON_MSize):
+#                         _ind = 
+#                 
+
+def Get_2Dlized_Result(_displist):
+    sizelist = [CON_CSize, CON_MSize, CON_ESize, CON_QSize_H, CON_QSize_L]
+    namelist = ['C', 'M', 'E', 'Q_H', 'Q_L']
+    if not len(_displist)==2:
+        print "Error in Get_2Dlized_Result()"
+        exit()
+        
+    dim1, dim2 = _displist
+    ind_dim1, ind_dim2 = namelist.index(dim1), namelist.index(dim2)
+    
+    prod_right = np.transpose(np.array[CON_MSize*CON_ESize*CON_QSize_H*CON_QSize_L, \
+                                       CON_ESize*CON_QSize_H*CON_QSize_L, \
+                                       CON_QSize_H*CON_QSize_L, \
+                                       CON_QSize_L, \
+                                       1.0])
+    
+
 fixE = 1
-for Q_h in range(CON_QSize_H):
-    for Q_l in range(CON_QSize_L):
-        _ind = fixC*CON_MSize*CON_ESize*CON_QSize_H*CON_QSize_L + \
-                fixM*CON_ESize*CON_QSize_H*CON_QSize_L+ \
+fixQH = 1
+fixQL = 5
+print 'M-->'
+print 'C|'
+for C_var in range(CON_CSize):
+    for M_var in range(CON_MSize):
+        _ind = C_var*CON_MSize*CON_ESize*CON_QSize_H*CON_QSize_L + \
+                M_var*CON_ESize*CON_QSize_H*CON_QSize_L+ \
                 fixE*CON_QSize_H*CON_QSize_L+ \
-                Q_h*CON_QSize_L+ \
-                Q_l
+                fixQH*CON_QSize_L+ \
+                fixQL
         print vi.policy[_ind],
         print '  ',
     print
-
-# def Pin_to_2D(_show_dims):
-# ### C --> M --> E --> Qh --> Ql
-#     _ref_set = ['C','M','E','Q_h','Q_l']
-# 
-# CM
-# 
-# E*(CON_QH)*(CON_QL) + Qh*(CON_QL) + Ql
-
-
     
+
+fixC = 7
+fixM = 1
+fixQL = 5
+print 'QH-->'
+print 'E|'
+for E_var in range(CON_ESize):
+    for QH_var in range(CON_QSize_H):
+        _ind = fixC*CON_MSize*CON_ESize*CON_QSize_H*CON_QSize_L + \
+                fixM*CON_ESize*CON_QSize_H*CON_QSize_L+ \
+                E_var*CON_QSize_H*CON_QSize_L+ \
+                QH_var*CON_QSize_L+ \
+                fixQL
+        print vi.policy[_ind],
+        print '  ',
+    print

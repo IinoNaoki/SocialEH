@@ -1,10 +1,11 @@
 import mdptoolbox
 import numpy as np
 
-a = [0,1,2,3,4]
-b = [0,1,2,3]
+a = [0,1,3,4]
+b = np.transpose([0,1,3,4])
 
-print a.index(b)
+print a.dot(b)
+
 
 # f = [q,w,e]
 # 
