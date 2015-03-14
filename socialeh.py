@@ -166,41 +166,11 @@ for ic in range(CON_CSize):
                     for action in SET_A:
                         R[cnt][action] = Reward(ic,im,ie,iqh,iql, action)
                     cnt = cnt + 1
-### C --> M --> E --> Qh --> Ql                    
-
-# R = np.random.randint(0,5,(CON_DIM,len(SET_A)))
-print R
-print R.shape
 
 P = np.array([ Get_Overall_mat(A_IDLE), Get_Overall_mat(A_GETE), Get_Overall_mat(A_QH), Get_Overall_mat(A_QL) ])
-# 
-# print P.shape
-# print P
-# print R.shape
-# print R
 
-vi = mdptoolbox.mdp.ValueIteration(P, R, 0.99)
-vi.run()
-print "Done"
-print vi.policy
-print vi.iter
-# print vi.V
 
-#C M E Q_H Q_L
-
-#c-m, e-qh, e-ql, qh-ql
-
-# def Save_V(_poli):
-#     #save C-M
-#     for fixE in range(CON_ESize):
-#         for fixQH in range(CON_QSize_H):
-#             for fixQL in range(CON_QSize_L):
-#                 for C_var in range(CON_CSize):
-#                     for M_var in range(CON_MSize):
-#                         _ind = 
-#                 
-
-def Get_2Dlized_Result(_displist):
+def Get_2Dlized_Result(_vi, _displist):
     sizelist = [CON_CSize, CON_MSize, CON_ESize, CON_QSize_H, CON_QSize_L]
     namelist = ['C', 'M', 'E', 'Q_H', 'Q_L']
     if not len(_displist)==2:
@@ -210,42 +180,51 @@ def Get_2Dlized_Result(_displist):
     dim1, dim2 = _displist
     ind_dim1, ind_dim2 = namelist.index(dim1), namelist.index(dim2)
     
-    prod_right = np.transpose(np.array[CON_MSize*CON_ESize*CON_QSize_H*CON_QSize_L, \
+    loopset = []
+    loopindset = []
+    for i in range(len(sizelist)):
+        if i not in [ind_dim1, ind_dim2]:
+            loopset.append(sizelist[i])
+            loopindset.append(i)
+            
+    _LOOP1, _LOOP2, _LOOP3 = loopset
+    _LOOPIND1, _LOOPIND2, _LOOPIND3 = loopindset
+    
+    prod_left = np.array([0.,0.,0.,0.,0.])
+    prod_right = np.transpose(np.array([CON_MSize*CON_ESize*CON_QSize_H*CON_QSize_L, \
                                        CON_ESize*CON_QSize_H*CON_QSize_L, \
                                        CON_QSize_H*CON_QSize_L, \
                                        CON_QSize_L, \
-                                       1.0])
+                                       1.0]))
+    
+    for lp1 in range(_LOOP1):
+        for lp2 in range(_LOOP2):
+            for lp3 in range(_LOOP3):
+                print namelist[_LOOPIND1],' =', lp1
+                print namelist[_LOOPIND2],' =', lp2
+                print namelist[_LOOPIND3],' =', lp3
+                print namelist[ind_dim1], ' as column var'
+                print namelist[ind_dim2], ' as row var'
+                for disp1 in range(sizelist[ind_dim1]):
+                    for disp2 in range(sizelist[ind_dim2]):
+                        prod_left[_LOOPIND1] = lp1
+                        prod_left[_LOOPIND2] = lp2
+                        prod_left[_LOOPIND3] = lp3
+                        prod_left[ind_dim1] = disp1
+                        prod_left[ind_dim2] = disp2
+                        _ind = int(prod_left.dot(prod_right))
+                        print _vi.policy[_ind],
+                        print '  ',
+                    print
+                print
+            print
+        print
     
 
-fixE = 1
-fixQH = 1
-fixQL = 5
-print 'M-->'
-print 'C|'
-for C_var in range(CON_CSize):
-    for M_var in range(CON_MSize):
-        _ind = C_var*CON_MSize*CON_ESize*CON_QSize_H*CON_QSize_L + \
-                M_var*CON_ESize*CON_QSize_H*CON_QSize_L+ \
-                fixE*CON_QSize_H*CON_QSize_L+ \
-                fixQH*CON_QSize_L+ \
-                fixQL
-        print vi.policy[_ind],
-        print '  ',
-    print
-    
-
-fixC = 7
-fixM = 1
-fixQL = 5
-print 'QH-->'
-print 'E|'
-for E_var in range(CON_ESize):
-    for QH_var in range(CON_QSize_H):
-        _ind = fixC*CON_MSize*CON_ESize*CON_QSize_H*CON_QSize_L + \
-                fixM*CON_ESize*CON_QSize_H*CON_QSize_L+ \
-                E_var*CON_QSize_H*CON_QSize_L+ \
-                QH_var*CON_QSize_L+ \
-                fixQL
-        print vi.policy[_ind],
-        print '  ',
-    print
+vi = mdptoolbox.mdp.ValueIteration(P, R, 0.99)
+vi.run()
+print "Done"
+# print vi.policy
+Get_2Dlized_Result(vi,['C','Q_L'])
+# print vi.iter
+# print vi.V
