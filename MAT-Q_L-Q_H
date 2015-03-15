@@ -1,0 +1,3916 @@
+Contact state C = 0
+Messenger state M = 0
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 0
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 0
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 0
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 0
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 0
+Messenger state M = 1
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 1
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 1
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 1
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 1
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 0
+Messenger state M = 2
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 2
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 2
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 2
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 2
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 0
+Messenger state M = 3
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 3
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 3
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 3
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 3
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 0
+Messenger state M = 4
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 4
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 4
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 4
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 0
+Messenger state M = 4
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+
+Contact state C = 1
+Messenger state M = 0
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 1
+Messenger state M = 0
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 1
+Messenger state M = 0
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 1
+Messenger state M = 0
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 1
+Messenger state M = 0
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 1
+Messenger state M = 1
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 1
+Messenger state M = 1
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 1
+Messenger state M = 1
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 1
+Messenger state M = 1
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 1
+Messenger state M = 1
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 1
+Messenger state M = 2
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 1
+Messenger state M = 2
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 1
+Messenger state M = 2
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 1
+Messenger state M = 2
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 1
+Messenger state M = 2
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 1
+Messenger state M = 3
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 1
+Messenger state M = 3
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 1
+Messenger state M = 3
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 1
+Messenger state M = 3
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 1
+Messenger state M = 3
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 1
+Messenger state M = 4
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 1
+Messenger state M = 4
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 1
+Messenger state M = 4
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 1
+Messenger state M = 4
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 1
+Messenger state M = 4
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+
+Contact state C = 2
+Messenger state M = 0
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 2
+Messenger state M = 0
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 2
+Messenger state M = 0
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 2
+Messenger state M = 0
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 2
+Messenger state M = 0
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 2
+Messenger state M = 1
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 2
+Messenger state M = 1
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 2
+Messenger state M = 1
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 2
+Messenger state M = 1
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 2
+Messenger state M = 1
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 2
+Messenger state M = 2
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 2
+Messenger state M = 2
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 2
+Messenger state M = 2
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 2
+Messenger state M = 2
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 2
+Messenger state M = 2
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 2
+Messenger state M = 3
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 2
+Messenger state M = 3
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 2
+Messenger state M = 3
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 2
+Messenger state M = 3
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 2
+Messenger state M = 3
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 2
+Messenger state M = 4
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+1   1   
+
+Contact state C = 2
+Messenger state M = 4
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 2
+Messenger state M = 4
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 2
+Messenger state M = 4
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 2
+Messenger state M = 4
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+
+Contact state C = 3
+Messenger state M = 0
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 3
+Messenger state M = 0
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 3
+Messenger state M = 0
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 3
+Messenger state M = 0
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 3
+Messenger state M = 0
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 3
+Messenger state M = 1
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 3
+Messenger state M = 1
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 3
+Messenger state M = 1
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 3
+Messenger state M = 1
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 3
+Messenger state M = 1
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 3
+Messenger state M = 2
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 3
+Messenger state M = 2
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 3
+Messenger state M = 2
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 3
+Messenger state M = 2
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 3
+Messenger state M = 2
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 3
+Messenger state M = 3
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 3
+Messenger state M = 3
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 3
+Messenger state M = 3
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 3
+Messenger state M = 3
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 3
+Messenger state M = 3
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 3
+Messenger state M = 4
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 3
+Messenger state M = 4
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 3
+Messenger state M = 4
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 3
+Messenger state M = 4
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 3
+Messenger state M = 4
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+
+Contact state C = 4
+Messenger state M = 0
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 4
+Messenger state M = 0
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 4
+Messenger state M = 0
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 4
+Messenger state M = 0
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 4
+Messenger state M = 0
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 4
+Messenger state M = 1
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 4
+Messenger state M = 1
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 4
+Messenger state M = 1
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 4
+Messenger state M = 1
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 4
+Messenger state M = 1
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 4
+Messenger state M = 2
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 4
+Messenger state M = 2
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 4
+Messenger state M = 2
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 4
+Messenger state M = 2
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 4
+Messenger state M = 2
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 4
+Messenger state M = 3
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 4
+Messenger state M = 3
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 4
+Messenger state M = 3
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 4
+Messenger state M = 3
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 4
+Messenger state M = 3
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 4
+Messenger state M = 4
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 4
+Messenger state M = 4
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 4
+Messenger state M = 4
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 4
+Messenger state M = 4
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 4
+Messenger state M = 4
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+
+Contact state C = 5
+Messenger state M = 0
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 5
+Messenger state M = 0
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 5
+Messenger state M = 0
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 5
+Messenger state M = 0
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 5
+Messenger state M = 0
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 5
+Messenger state M = 1
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 5
+Messenger state M = 1
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 5
+Messenger state M = 1
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 5
+Messenger state M = 1
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 5
+Messenger state M = 1
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 5
+Messenger state M = 2
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 5
+Messenger state M = 2
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 5
+Messenger state M = 2
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 5
+Messenger state M = 2
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 5
+Messenger state M = 2
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 5
+Messenger state M = 3
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 5
+Messenger state M = 3
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 5
+Messenger state M = 3
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 5
+Messenger state M = 3
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 5
+Messenger state M = 3
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+Contact state C = 5
+Messenger state M = 4
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+1   1   
+1   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+0   1   
+
+Contact state C = 5
+Messenger state M = 4
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 5
+Messenger state M = 4
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 5
+Messenger state M = 4
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 5
+Messenger state M = 4
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+
+
+Contact state C = 6
+Messenger state M = 0
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 6
+Messenger state M = 0
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 6
+Messenger state M = 0
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 6
+Messenger state M = 0
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 6
+Messenger state M = 0
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 6
+Messenger state M = 1
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 6
+Messenger state M = 1
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 6
+Messenger state M = 1
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 6
+Messenger state M = 1
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 6
+Messenger state M = 1
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 6
+Messenger state M = 2
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 6
+Messenger state M = 2
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 6
+Messenger state M = 2
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 6
+Messenger state M = 2
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 6
+Messenger state M = 2
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 6
+Messenger state M = 3
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 6
+Messenger state M = 3
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 6
+Messenger state M = 3
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 6
+Messenger state M = 3
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 6
+Messenger state M = 3
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 6
+Messenger state M = 4
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 6
+Messenger state M = 4
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 6
+Messenger state M = 4
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 6
+Messenger state M = 4
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 6
+Messenger state M = 4
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+
+Contact state C = 7
+Messenger state M = 0
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 7
+Messenger state M = 0
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 7
+Messenger state M = 0
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 7
+Messenger state M = 0
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 7
+Messenger state M = 0
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 7
+Messenger state M = 1
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 7
+Messenger state M = 1
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 7
+Messenger state M = 1
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 7
+Messenger state M = 1
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 7
+Messenger state M = 1
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 7
+Messenger state M = 2
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 7
+Messenger state M = 2
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 7
+Messenger state M = 2
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 7
+Messenger state M = 2
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 7
+Messenger state M = 2
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 7
+Messenger state M = 3
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 7
+Messenger state M = 3
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 7
+Messenger state M = 3
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 7
+Messenger state M = 3
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 7
+Messenger state M = 3
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 7
+Messenger state M = 4
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 7
+Messenger state M = 4
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 7
+Messenger state M = 4
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 7
+Messenger state M = 4
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 7
+Messenger state M = 4
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+
+Contact state C = 8
+Messenger state M = 0
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 8
+Messenger state M = 0
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 8
+Messenger state M = 0
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 8
+Messenger state M = 0
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 8
+Messenger state M = 0
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 8
+Messenger state M = 1
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 8
+Messenger state M = 1
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 8
+Messenger state M = 1
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 8
+Messenger state M = 1
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 8
+Messenger state M = 1
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 8
+Messenger state M = 2
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 8
+Messenger state M = 2
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 8
+Messenger state M = 2
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 8
+Messenger state M = 2
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 8
+Messenger state M = 2
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 8
+Messenger state M = 3
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 8
+Messenger state M = 3
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 8
+Messenger state M = 3
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 8
+Messenger state M = 3
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 8
+Messenger state M = 3
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 8
+Messenger state M = 4
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 8
+Messenger state M = 4
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 8
+Messenger state M = 4
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 8
+Messenger state M = 4
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 8
+Messenger state M = 4
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+
+Contact state C = 9
+Messenger state M = 0
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 9
+Messenger state M = 0
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 9
+Messenger state M = 0
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 9
+Messenger state M = 0
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 9
+Messenger state M = 0
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 9
+Messenger state M = 1
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 9
+Messenger state M = 1
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 9
+Messenger state M = 1
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 9
+Messenger state M = 1
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 9
+Messenger state M = 1
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 9
+Messenger state M = 2
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 9
+Messenger state M = 2
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 9
+Messenger state M = 2
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 9
+Messenger state M = 2
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 9
+Messenger state M = 2
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 9
+Messenger state M = 3
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 9
+Messenger state M = 3
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 9
+Messenger state M = 3
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 9
+Messenger state M = 3
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 9
+Messenger state M = 3
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 9
+Messenger state M = 4
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 9
+Messenger state M = 4
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 9
+Messenger state M = 4
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 9
+Messenger state M = 4
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 9
+Messenger state M = 4
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+
+Contact state C = 10
+Messenger state M = 0
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 10
+Messenger state M = 0
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 10
+Messenger state M = 0
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 10
+Messenger state M = 0
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 10
+Messenger state M = 0
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 10
+Messenger state M = 1
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 10
+Messenger state M = 1
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 10
+Messenger state M = 1
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 10
+Messenger state M = 1
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 10
+Messenger state M = 1
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 10
+Messenger state M = 2
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 10
+Messenger state M = 2
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 10
+Messenger state M = 2
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 10
+Messenger state M = 2
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 10
+Messenger state M = 2
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 10
+Messenger state M = 3
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 10
+Messenger state M = 3
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 10
+Messenger state M = 3
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 10
+Messenger state M = 3
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 10
+Messenger state M = 3
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+Contact state C = 10
+Messenger state M = 4
+Energy state E = 0
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+0   0   
+
+Contact state C = 10
+Messenger state M = 4
+Energy state E = 1
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 10
+Messenger state M = 4
+Energy state E = 2
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+0   2   
+
+Contact state C = 10
+Messenger state M = 4
+Energy state E = 3
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   2   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+Contact state C = 10
+Messenger state M = 4
+Energy state E = 4
+Low queue Q_L as row var |
+High queue Q_H as row var ->
+0   2   
+3   3   
+3   3   
+3   2   
+3   2   
+3   2   
+0   2   
+0   2   
+
+
+
