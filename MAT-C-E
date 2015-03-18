@@ -1,0 +1,121 @@
+Queue state Q = 0
+Contact state C as row var |
+Energy state E as row var ->
+0   0   0   0   0   
+1   1   1   1   0   
+1   1   1   1   0   
+1   1   1   1   0   
+1   1   1   0   0   
+1   1   1   0   0   
+0   0   0   0   0   
+0   0   0   0   0   
+0   0   0   0   0   
+0   0   0   0   0   
+0   0   0   0   0   
+
+Queue state Q = 1
+Contact state C as row var |
+Energy state E as row var ->
+0   0   0   0   0   
+1   1   1   1   0   
+1   1   1   1   0   
+1   1   1   0   0   
+1   1   1   0   0   
+1   1   0   0   0   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+
+Queue state Q = 2
+Contact state C as row var |
+Energy state E as row var ->
+0   0   0   0   0   
+1   1   1   1   0   
+1   1   1   1   0   
+1   1   1   0   0   
+1   1   0   0   0   
+1   1   0   0   0   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+
+Queue state Q = 3
+Contact state C as row var |
+Energy state E as row var ->
+0   0   0   0   0   
+1   1   1   1   0   
+1   1   1   0   0   
+1   1   0   0   0   
+1   1   0   0   0   
+1   0   0   0   0   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+
+Queue state Q = 4
+Contact state C as row var |
+Energy state E as row var ->
+0   0   0   0   0   
+1   1   1   1   0   
+1   1   1   0   0   
+1   1   0   0   0   
+1   0   0   0   0   
+1   0   0   0   0   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+
+Queue state Q = 5
+Contact state C as row var |
+Energy state E as row var ->
+0   0   0   0   0   
+1   1   1   1   0   
+1   1   0   0   0   
+1   0   0   0   0   
+0   0   0   0   0   
+0   0   0   0   0   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+0   0   2   2   2   
+
+Queue state Q = 6
+Contact state C as row var |
+Energy state E as row var ->
+0   0   0   0   0   
+1   1   1   1   0   
+1   1   0   0   0   
+1   0   0   0   0   
+0   0   0   0   0   
+0   0   0   0   0   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+0   0   2   2   2   
+0   0   0   0   0   
+
+Queue state Q = 7
+Contact state C as row var |
+Energy state E as row var ->
+0   0   0   0   0   
+1   1   1   1   0   
+1   1   0   0   0   
+1   0   0   0   0   
+0   0   0   0   0   
+0   0   0   0   0   
+0   2   2   2   2   
+0   2   2   2   2   
+0   2   2   2   2   
+0   0   2   2   2   
+0   0   0   0   0   
+
+
