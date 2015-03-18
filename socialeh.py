@@ -32,15 +32,16 @@ def Get_2Dlized_Result(_vi, _displist):
     f = open('./MAT-'+str(dim1)+'-'+str(dim2),'w')
     for nonfixedstate in range(NON_FIXED_STATE):
         f.write( str(easynamelist[FIXED_INDEX])+' = '+str(nonfixedstate)+'\n')
-        f.write( str(easynamelist[ind_dim1])+' as row var |\n')
-        f.write( str(easynamelist[ind_dim2])+' as row var ->\n')
+        f.write( str(easynamelist[ind_dim1])+' as vertical var |\n')
+        f.write( str(easynamelist[ind_dim2])+' as horizontal var ->\n')
         for disp1 in range(sizelist[ind_dim1]):
             for disp2 in range(sizelist[ind_dim2]):
                 prod_left[FIXED_INDEX] = nonfixedstate
                 prod_left[ind_dim1] = disp1
                 prod_left[ind_dim2] = disp2
                 _ind = int(prod_left.dot(prod_right))
-                f.write( str(_vi.policy[_ind])+'   ')
+                actlist = ['-','c','Q']
+                f.write( str(actlist[_vi.policy[_ind]])+'   ')
             f.write('\n')
         f.write('\n')
     f.write('\n')

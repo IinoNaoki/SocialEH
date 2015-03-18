@@ -18,6 +18,8 @@ CON_ESize = 10
 CON_QSize = 10
 CON_DIM = CON_CSize * CON_ESize * CON_QSize
 
+CON_inj_prob = 0.4
+
 # define actions
 A_IDLE = 0 # 0: idle
 A_GETE = 1 # 1: get energy
@@ -60,7 +62,7 @@ def Get_E_mat(act):
 
 
 
-def Get_Q_mat_single(act):
+def Get_Q_mat(act, inj_prob=CON_inj_prob):
         #
     def Q_plus_mat(getQ=1):
         _q_plus = np.zeros((CON_QSize,CON_QSize))
@@ -86,9 +88,8 @@ def Get_Q_mat_single(act):
 def Get_Overall_mat(act):
     _cmat = Get_C_mat(act)
     _emat = Get_E_mat(act)
-    _qmat = Get_Q_mat_single( act)
+    _qmat = Get_Q_mat( act)
     overall_kron = np.kron(np.kron(_cmat, _emat), _qmat)
-#     print overkron.shape
     return overall_kron
 
 
@@ -98,18 +99,19 @@ def ElecPriceCost(_c):
         exit()
     
     if _c in SET_CHARGER:
-        return -np.power(_c, 0.5)*1.0
+        return -np.power(_c, 0.5)*0.1
     else:
         return -65536.0
 
 def MessengerDeliveryProb(_c):
     if _c in SET_MESSENGER:
-        return np.power( (CON_CSize-1.0-_c)/(len(SET_MESSENGER)-1.0) , 0.5)
-#         return 0.5
+        _prob = np.power( (CON_CSize-1.0-_c)/(len(SET_MESSENGER)-1.0) , 0.8)
+        return _prob
     else:
         return 0.0
 
 def QDelayCost(_q):
+#     return 0.0
     return -1.0*_q
 
 
@@ -123,7 +125,7 @@ def Reward(_c, _e, _q, action):
             return 2.0*MessengerDeliveryProb(_c) + QDelayCost(_q)
 #                 return 2.0 + QDelayCost(_qh, _ql)
         else:
-            return -65535000.0
+            return -65536.0
     else:
         print "error in Reward()"
         exit()
