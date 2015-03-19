@@ -18,6 +18,15 @@ CON_ESize = 10
 CON_QSize = 10
 CON_DIM = CON_CSize * CON_ESize * CON_QSize
 
+SET_NOTHING = [0]
+SET_CHARGER = [1]
+SET_MESSENGER = [2]
+
+CON_CSize = len(SET_NOTHING) + len(SET_CHARGER) + len(SET_MESSENGER)
+CON_ESize = 2
+CON_QSize = 2
+CON_DIM = CON_CSize * CON_ESize * CON_QSize
+
 CON_inj_prob = 0.4
 
 # define actions
@@ -64,10 +73,11 @@ def Get_E_mat(act):
 
 def Get_Q_mat(act, inj_prob=CON_inj_prob):
         #
-    def Q_plus_mat(getQ=1):
+    def Q_plus_mat(getQ=1, inj=inj_prob):
         _q_plus = np.zeros((CON_QSize,CON_QSize))
         for i in range(CON_QSize-1):
-            _q_plus[i][i+1] = 1.0
+            _q_plus[i][i+1] = inj
+            _q_plus[i][i] = 1.0 - inj
         _q_plus[CON_QSize-1][CON_QSize-1] = 1.0
         return _q_plus
         
@@ -88,7 +98,7 @@ def Get_Q_mat(act, inj_prob=CON_inj_prob):
 def Get_Overall_mat(act):
     _cmat = Get_C_mat(act)
     _emat = Get_E_mat(act)
-    _qmat = Get_Q_mat( act)
+    _qmat = Get_Q_mat(act)
     overall_kron = np.kron(np.kron(_cmat, _emat), _qmat)
     return overall_kron
 
@@ -104,8 +114,10 @@ def ElecPriceCost(_c):
         return -65536.0
 
 def MessengerDeliveryProb(_c):
+    delvprob = [0.9, 0.7, 0.4, 0.1, 0.0001]
     if _c in SET_MESSENGER:
-        _prob = np.power( (CON_CSize-1.0-_c)/(len(SET_MESSENGER)-1.0) , 0.8)
+#         _prob = np.power( (CON_CSize-1.0-_c)/(len(SET_MESSENGER)-1.0) , 0.8)
+        _prob = delvprob[SET_MESSENGER.index(_c)]
         return _prob
     else:
         return 0.0
@@ -122,7 +134,7 @@ def Reward(_c, _e, _q, action):
         return ElecPriceCost(_c) + QDelayCost(_q)
     elif action == A_Q:
         if _q>0 and _e>0 and (_c in SET_MESSENGER):
-            return 2.0*MessengerDeliveryProb(_c) + QDelayCost(_q)
+            return 20.0*MessengerDeliveryProb(_c) + QDelayCost(_q)
 #                 return 2.0 + QDelayCost(_qh, _ql)
         else:
             return -65536.0

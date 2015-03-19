@@ -58,6 +58,10 @@ for ic in range(CON_CSize):
 
 P = np.array([ Get_Overall_mat(A_IDLE), Get_Overall_mat(A_GETE), Get_Overall_mat(A_Q) ])
 
+
+print P
+print
+print R
 vi = mdptoolbox.mdp.ValueIteration(P, R, 0.95)
 vi.run()
 print "Done"
