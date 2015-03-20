@@ -7,7 +7,6 @@ Created on 2 Mar, 2015
 
 from head import *
 
-# a dirty function
 def Get_2Dlized_Result(_vi, _displist):
     sizelist = [CON_CSize, CON_ESize, CON_QSize]
     namelist = ['C', 'E', 'Q']
@@ -21,25 +20,23 @@ def Get_2Dlized_Result(_vi, _displist):
     
     for i in range(len(sizelist)):
         if i not in [ind_dim1, ind_dim2]:
-            NON_FIXED_STATE = sizelist[i]
-            FIXED_INDEX = i
+            NON_DISP_STATE = sizelist[i]
+            NON_DISP_INDEX = i
     
-    prod_left = np.array([0.,0.,0.])
-    prod_right = np.transpose(np.array([CON_ESize*CON_QSize, \
-                                       CON_QSize, \
-                                       1.0]))
     
+   
     f = open('./MAT-'+str(dim1)+'-'+str(dim2),'w')
-    for nonfixedstate in range(NON_FIXED_STATE):
-        f.write( str(easynamelist[FIXED_INDEX])+' = '+str(nonfixedstate)+'\n')
+    for nondispstate in range(NON_DISP_STATE):
+        f.write( str(easynamelist[NON_DISP_INDEX])+' = '+str(nondispstate)+', fixed.\n')
         f.write( str(easynamelist[ind_dim1])+' as vertical var |\n')
         f.write( str(easynamelist[ind_dim2])+' as horizontal var ->\n')
         for disp1 in range(sizelist[ind_dim1]):
             for disp2 in range(sizelist[ind_dim2]):
-                prod_left[FIXED_INDEX] = nonfixedstate
-                prod_left[ind_dim1] = disp1
-                prod_left[ind_dim2] = disp2
-                _ind = int(prod_left.dot(prod_right))
+                _tuple = np.array([0.,0.,0.])
+                _tuple[NON_DISP_INDEX] = nondispstate
+                _tuple[ind_dim1] = disp1
+                _tuple[ind_dim2] = disp2
+                _ind = Trans_tuple_to_index(_tuple)
                 actlist = ['-','c','Q']
                 f.write( str(actlist[_vi.policy[_ind]])+'   ')
             f.write('\n')
@@ -48,20 +45,17 @@ def Get_2Dlized_Result(_vi, _displist):
 
 
 R = np.zeros((CON_DIM,len(SET_A)))
-cnt = 0
+# cnt = 0
 for ic in range(CON_CSize):
     for ie in range(CON_ESize):
         for iq in range(CON_QSize):
+            ind = Trans_tuple_to_index([ic, ie, iq])
             for action in SET_A:
-                R[cnt][action] = Reward(ic,ie,iq, action)
-            cnt = cnt + 1
+                R[ind][action] = Reward(ic,ie,iq, action)
+#             cnt = cnt + 1
 
 P = np.array([ Get_Overall_mat(A_IDLE), Get_Overall_mat(A_GETE), Get_Overall_mat(A_Q) ])
 
-
-print P
-print
-print R
 vi = mdptoolbox.mdp.ValueIteration(P, R, 0.95)
 vi.run()
 print "Done"
@@ -70,5 +64,13 @@ Get_2Dlized_Result(vi,['C','E'])
 Get_2Dlized_Result(vi,['C','Q'])
 Get_2Dlized_Result(vi,['E','Q'])
 
-# print vi.iter
+print vi.iter
 # print vi.V
+
+_ind1 = [6,4,0]
+_ind2 = [6,5,0]
+
+print vi.V[Trans_tuple_to_index(_ind1)],
+print " should be smaller"
+print vi.V[Trans_tuple_to_index(_ind2)],
+print " should be larger"

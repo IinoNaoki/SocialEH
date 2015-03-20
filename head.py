@@ -16,16 +16,17 @@ SET_MESSENGER = [6,7,8,9,10]
 CON_CSize = len(SET_NOTHING) + len(SET_CHARGER) + len(SET_MESSENGER)
 CON_ESize = 10
 CON_QSize = 10
+
 CON_DIM = CON_CSize * CON_ESize * CON_QSize
 
-SET_NOTHING = [0]
-SET_CHARGER = [1]
-SET_MESSENGER = [2]
-
-CON_CSize = len(SET_NOTHING) + len(SET_CHARGER) + len(SET_MESSENGER)
-CON_ESize = 2
-CON_QSize = 2
-CON_DIM = CON_CSize * CON_ESize * CON_QSize
+# SET_NOTHING = [0]
+# SET_CHARGER = [1]
+# SET_MESSENGER = [2]
+# 
+# CON_CSize = len(SET_NOTHING) + len(SET_CHARGER) + len(SET_MESSENGER)
+# CON_ESize = 2
+# CON_QSize = 2
+# CON_DIM = CON_CSize * CON_ESize * CON_QSize
 
 CON_inj_prob = 0.4
 
@@ -109,22 +110,29 @@ def ElecPriceCost(_c):
         exit()
     
     if _c in SET_CHARGER:
-        return -np.power(_c, 0.5)*0.1
+        print "temp. changed in ElecPriceCost(_c)"
+        return ([-0.00, -0.001, -2.0, -7.0, -40.0, -100.0])[_c]
+#         return -np.power(_c, 0.5)*0.2
     else:
         return -65536.0
 
 def MessengerDeliveryProb(_c):
-    delvprob = [0.9, 0.7, 0.4, 0.1, 0.0001]
+    delvprob = [0.9, 0.7, 0.4, 0.2, 0.0001]
     if _c in SET_MESSENGER:
+        print "temp. changed in MessengerDeliveryProb(_c)"
 #         _prob = np.power( (CON_CSize-1.0-_c)/(len(SET_MESSENGER)-1.0) , 0.8)
         _prob = delvprob[SET_MESSENGER.index(_c)]
+#         _prob = 0.5
         return _prob
     else:
         return 0.0
 
 def QDelayCost(_q):
-#     return 0.0
-    return -1.0*_q
+    print "temp. changed in QDelayCost(_q)"
+#     return -100.0
+#     return -1.0*_q
+#     return -1.0*_q
+    return 0.0
 
 
 def Reward(_c, _e, _q, action):
@@ -134,10 +142,21 @@ def Reward(_c, _e, _q, action):
         return ElecPriceCost(_c) + QDelayCost(_q)
     elif action == A_Q:
         if _q>0 and _e>0 and (_c in SET_MESSENGER):
-            return 20.0*MessengerDeliveryProb(_c) + QDelayCost(_q)
+            return 200.0*MessengerDeliveryProb(_c) + QDelayCost(_q)
 #                 return 2.0 + QDelayCost(_qh, _ql)
         else:
-            return -65536.0
+            return -655360000.0
     else:
         print "error in Reward()"
         exit()
+        
+def Trans_tuple_to_index(lis):
+    if len(lis)!=3:
+        print "error in Trans_tuple_to_index(lis)"
+        exit()
+        
+    prod_left = np.asarray(lis)
+    prod_right = prod_right = np.transpose(np.array([CON_ESize*CON_QSize, \
+                                                     CON_QSize, \
+                                                     1.0]))
+    return int(prod_left.dot(prod_right)) 
