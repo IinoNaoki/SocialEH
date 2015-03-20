@@ -114,7 +114,7 @@ def ElecPriceCost(_c):
         return ([-0.00, -0.001, -2.0, -7.0, -40.0, -100.0])[_c]
 #         return -np.power(_c, 0.5)*0.2
     else:
-        return -65536.0
+        return -655360000.0
 
 def MessengerDeliveryProb(_c):
     delvprob = [0.9, 0.7, 0.4, 0.2, 0.0001]
