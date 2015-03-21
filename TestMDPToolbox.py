@@ -1,3 +1,6 @@
 from head import *
 
-print [1,2,3,4,5][2]
+a = np.array([[1,2],[3,4]])
+b = np.array([[5,6],[7,8]])
+
+print np.kron(a,b)

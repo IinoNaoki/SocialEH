@@ -8,7 +8,7 @@ Created on 2 Mar, 2015
 from head import *
 
 def Get_2Dlized_Result(_vi, _displist):
-    sizelist = [CON_CSize, CON_ESize, CON_QSize]
+    sizelist = [CON_CSIZE, CON_ESIZE, CON_QSIZE]
     namelist = ['C', 'E', 'Q']
     easynamelist = ['Contact state C', 'Energy state E', 'Queue state Q']
     if not len(_displist)==2:
@@ -46,15 +46,16 @@ def Get_2Dlized_Result(_vi, _displist):
 
 R = np.zeros((CON_DIM,len(SET_A)))
 # cnt = 0
-for ic in range(CON_CSize):
-    for ie in range(CON_ESize):
-        for iq in range(CON_QSize):
+for ic in range(CON_CSIZE):
+    for ie in range(CON_ESIZE):
+        for iq in range(CON_QSIZE):
             ind = Trans_tuple_to_index([ic, ie, iq])
             for action in SET_A:
                 R[ind][action] = Reward(ic,ie,iq, action)
 #             cnt = cnt + 1
 
 P = np.array([ Get_Overall_mat(A_IDLE), Get_Overall_mat(A_GETE), Get_Overall_mat(A_Q) ])
+# P = np.array([ Build_P_mat(A_IDLE), Build_P_mat(A_GETE), Build_P_mat(A_Q) ])
 
 vi = mdptoolbox.mdp.ValueIteration(P, R, 0.95)
 vi.run()
@@ -67,8 +68,8 @@ Get_2Dlized_Result(vi,['E','Q'])
 print vi.iter
 # print vi.V
 
-_ind1 = [6,4,0]
-_ind2 = [6,5,0]
+_ind1 = [3,4,0]
+_ind2 = [3,4,1]
 
 print vi.V[Trans_tuple_to_index(_ind1)],
 print " should be smaller"
