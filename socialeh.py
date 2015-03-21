@@ -66,7 +66,7 @@ Get_2Dlized_Result(vi,['C','Q'])
 Get_2Dlized_Result(vi,['E','Q'])
 
 print vi.iter
-# print vi.V
+print vi.policy
 
 _ind1 = [3,4,0]
 _ind2 = [3,4,1]

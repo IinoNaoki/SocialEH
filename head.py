@@ -200,7 +200,7 @@ def MessengerDeliveryProb(_c):
 def QDelayCost(_q):
 #     return -100.0
 #     return -10.0*_q
-    return -0.0*_q
+    return -0.2*_q
 #     return 0.0
 
 
@@ -219,7 +219,7 @@ def Reward(_c, _e, _q, action):
         if _e>0 and _q>0:
             return 10.0*MessengerDeliveryProb(_c) + QDelayCost(_q)
         else:
-            return  QDelayCost(_q)
+            return  -65536000000000000.0 + QDelayCost(_q)
     else:
         print "error in Reward()"
         exit()

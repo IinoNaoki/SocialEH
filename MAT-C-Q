@@ -11,7 +11,7 @@ Energy state E = 1, fixed.
 Contact state C as vertical var |
 Queue state Q as horizontal var ->
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
--   -   -   -   -   -   -   -   -   -   
+-   Q   Q   Q   Q   Q   Q   Q   Q   -   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
@@ -39,7 +39,7 @@ Contact state C as vertical var |
 Queue state Q as horizontal var ->
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
--   -   -   -   -   -   -   -   -   -   
+-   -   Q   Q   Q   Q   Q   Q   -   -   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 
@@ -48,7 +48,7 @@ Contact state C as vertical var |
 Queue state Q as horizontal var ->
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
--   -   -   -   -   -   -   -   -   -   
+-   -   Q   Q   Q   Q   Q   Q   Q   -   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 
@@ -57,7 +57,7 @@ Contact state C as vertical var |
 Queue state Q as horizontal var ->
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
--   -   -   -   Q   Q   Q   Q   Q   Q   
+-   -   Q   Q   Q   Q   Q   Q   Q   Q   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 
@@ -66,7 +66,7 @@ Contact state C as vertical var |
 Queue state Q as horizontal var ->
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
--   -   -   Q   Q   Q   Q   Q   Q   Q   
+-   -   Q   Q   Q   Q   Q   Q   Q   Q   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 
@@ -75,8 +75,8 @@ Contact state C as vertical var |
 Queue state Q as horizontal var ->
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
--   -   -   Q   Q   Q   Q   Q   Q   Q   
--   -   -   -   -   -   -   -   -   -   
+-   -   Q   Q   Q   Q   Q   Q   Q   Q   
+-   -   -   -   Q   Q   Q   Q   -   -   
 -   -   -   -   -   -   -   -   -   -   
 
 Energy state E = 9, fixed.
@@ -84,8 +84,8 @@ Contact state C as vertical var |
 Queue state Q as horizontal var ->
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
--   -   -   Q   Q   Q   Q   Q   Q   Q   
--   -   -   -   -   -   -   -   -   -   
+-   -   Q   Q   Q   Q   Q   Q   Q   Q   
+-   -   -   -   Q   Q   Q   Q   Q   -   
 -   -   -   -   -   -   -   -   -   -   
 
 
