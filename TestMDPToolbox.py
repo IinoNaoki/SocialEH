@@ -1,4 +1,4 @@
-from onlyQ import *
+from head import *
 
 def Get_Q_mat(act, inj_prob=CON_inj_prob):
         #
@@ -18,6 +18,8 @@ def Get_Q_mat(act, inj_prob=CON_inj_prob):
         return _q_minus
 
     if act == A_IDLE:
+        return Q_plus_mat()
+    elif act == A_GETE:
         return Q_plus_mat()
     elif act == A_Q:
         return Q_plus_mat().dot(Q_minus_mat())

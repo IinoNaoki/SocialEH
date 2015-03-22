@@ -57,7 +57,7 @@ for ic in range(CON_CSIZE):
 P = np.array([ Get_Overall_mat(A_IDLE), Get_Overall_mat(A_GETE), Get_Overall_mat(A_Q) ])
 # P = np.array([ Build_P_mat(A_IDLE), Build_P_mat(A_GETE), Build_P_mat(A_Q) ])
 
-vi = mdptoolbox.mdp.ValueIteration(P, R, 0.95)
+vi = mdptoolbox.mdp.ValueIteration(P, R, 0.90)
 vi.run()
 print "Done"
 # print vi.policy
@@ -68,10 +68,10 @@ Get_2Dlized_Result(vi,['E','Q'])
 print vi.iter
 print vi.policy
 
-_ind1 = [3,4,0]
-_ind2 = [3,4,1]
-
-print vi.V[Trans_tuple_to_index(_ind1)],
-print " should be smaller"
-print vi.V[Trans_tuple_to_index(_ind2)],
-print " should be larger"
+# _ind1 = [3,4,0]
+# _ind2 = [3,4,1]
+# 
+# print vi.V[Trans_tuple_to_index(_ind1)],
+# print " should be smaller"
+# print vi.V[Trans_tuple_to_index(_ind2)],
+# print " should be larger"
