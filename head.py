@@ -9,20 +9,21 @@ import mdptoolbox
 import numpy as np
 from scipy.sparse import csr_matrix as sparse
 
-SET_CHARGER = [0,1,2,3,4]
-SET_MESSENGER = [5,6,7,8,9]
+SET_NOTHING = [0]
+SET_CHARGER = [1,2,3,4,5]
+SET_MESSENGER = [6,7,8,9,10]
 # 
 # SET_CHARGER = [] # no charger
 # SET_MESSENGER = [0,1,2,3,4]
 
-CON_CSIZE = len(SET_CHARGER) + len(SET_MESSENGER)
+CON_CSIZE = len(SET_NOTHING) + len(SET_CHARGER) + len(SET_MESSENGER)
 CON_ESIZE = 10
 CON_QSIZE = 10
 
 CON_DIM = CON_CSIZE * CON_ESIZE * CON_QSIZE
 
 
-CON_inj_prob = 0.0
+CON_inj_prob = 0.4
 
 # define actions
 A_IDLE = 0 # 0: idle
@@ -98,7 +99,7 @@ def Get_Q_mat(act, inj_prob=CON_inj_prob):
     elif act == A_GETE:
         return Q_plus_mat()
     elif act == A_Q:
-        return Q_plus_mat().dot(Q_minus_mat())
+        return Q_minus_mat().dot(Q_plus_mat())
 
 
 def Get_Overall_mat(act):
@@ -134,7 +135,7 @@ def MessengerDeliveryProb(_c):
 def QDelayCost(_q):
 #     return -100.0
 #     return -10.0*_q
-    return -10.0*_q
+    return -1.0*_q
 #     return 0.0
 
 
