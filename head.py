@@ -23,7 +23,7 @@ CON_QSIZE = 10
 CON_DIM = CON_CSIZE * CON_ESIZE * CON_QSIZE
 
 
-CON_inj_prob = 1.0
+CON_inj_prob = 0.0
 
 # define actions
 A_IDLE = 0 # 0: idle
@@ -130,7 +130,7 @@ def MessengerDeliveryProb(_c):
 #         _prob = 0.5
         return _prob
     else:
-        return -65536000000000000.0
+        return -655360000000000000000000.0
 
 def QDelayCost(_q):
 #     return -100.0
@@ -155,7 +155,7 @@ def Reward(_c, _e, _q, action):
         if _e>0 and _q>0:
             return 10.0*MessengerDeliveryProb(_c) + QDelayCost(_q)
         else:
-            return  -65536000000000000.0 + QDelayCost(_q)
+            return  -655360000000000000000000.0 + QDelayCost(_q)
     else:
         print "error in Reward()"
         exit()
