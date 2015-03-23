@@ -21,9 +21,9 @@ c   c   c   c   c   c   c   c   c   c
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
--   c   c   c   c   c   c   c   c   c   
--   -   -   c   c   c   c   c   c   c   
--   -   -   -   c   c   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   c   c   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 
 Contact state C = 2, fixed.
@@ -34,9 +34,9 @@ c   c   c   c   c   c   c   c   c   c
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
--   c   c   c   c   c   c   c   c   c   
--   -   -   c   c   c   c   c   c   c   
--   -   -   -   -   c   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 
@@ -47,10 +47,10 @@ c   c   c   c   c   c   c   c   c   c
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
--   c   c   c   c   c   c   c   c   c   
--   -   c   c   c   c   c   c   c   c   
--   -   -   -   c   c   c   c   c   c   
--   -   -   -   -   -   -   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   c   c   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 
@@ -61,9 +61,9 @@ c   c   c   c   c   c   c   c   c   c
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
--   c   c   c   c   c   c   c   c   c   
--   -   -   c   c   c   c   c   c   c   
--   -   -   -   -   c   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   c   c   c   c   c   c   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
@@ -74,10 +74,10 @@ Queue state Q as horizontal var ->
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
--   c   c   c   c   c   c   c   c   c   
--   -   c   c   c   c   c   c   c   c   
--   -   -   c   c   c   c   c   c   c   
--   -   -   -   -   -   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   c   c   c   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
@@ -86,8 +86,8 @@ Contact state C = 6, fixed.
 Energy state E as vertical var |
 Queue state Q as horizontal var ->
 -   -   -   -   -   -   -   -   -   -   
--   Q   Q   Q   Q   Q   Q   Q   Q   -   
--   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   -   -   -   -   -   
+-   Q   Q   Q   Q   Q   Q   Q   -   -   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -100,7 +100,7 @@ Contact state C = 7, fixed.
 Energy state E as vertical var |
 Queue state Q as horizontal var ->
 -   -   -   -   -   -   -   -   -   -   
--   Q   Q   Q   Q   Q   Q   Q   Q   -   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   

@@ -22,6 +22,6 @@ def Get_Q_mat(act, inj_prob=CON_inj_prob):
     elif act == A_GETE:
         return Q_plus_mat()
     elif act == A_Q:
-        return Q_plus_mat().dot(Q_minus_mat())
+        return Q_minus_mat().dot(Q_plus_mat())
     
 print Get_Q_mat(2)

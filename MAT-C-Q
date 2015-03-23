@@ -22,8 +22,8 @@ c   c   c   c   c   c   c   c   c   c
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
--   Q   Q   Q   Q   Q   Q   Q   Q   -   
--   Q   Q   Q   Q   Q   Q   Q   Q   -   
+-   Q   Q   Q   Q   -   -   -   -   -   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -37,7 +37,7 @@ c   c   c   c   c   c   c   c   c   c
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
--   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   -   -   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -51,7 +51,7 @@ c   c   c   c   c   c   c   c   c   c
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
--   c   c   c   c   c   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -64,9 +64,9 @@ Queue state Q as horizontal var ->
 -   -   -   -   -   -   -   -   -   -   
 c   c   c   c   c   c   c   c   c   c   
 c   c   c   c   c   c   c   c   c   c   
--   c   c   c   c   c   c   c   c   c   
--   c   c   c   c   c   c   c   c   c   
--   -   c   c   c   c   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -78,10 +78,10 @@ Contact state C as vertical var |
 Queue state Q as horizontal var ->
 -   -   -   -   -   -   -   -   -   -   
 c   c   c   c   c   c   c   c   c   c   
--   c   c   c   c   c   c   c   c   c   
--   -   c   c   c   c   c   c   c   c   
--   -   -   c   c   c   c   c   c   c   
--   -   -   c   c   c   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   c   c   c   c   c   c   -   -   -   
+c   c   c   c   -   -   -   -   -   -   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -92,11 +92,11 @@ Energy state E = 6, fixed.
 Contact state C as vertical var |
 Queue state Q as horizontal var ->
 -   -   -   -   -   -   -   -   -   -   
--   c   c   c   c   c   c   c   c   c   
--   -   -   c   c   c   c   c   c   c   
--   -   -   -   c   c   c   c   c   c   
--   -   -   -   -   c   c   c   c   c   
--   -   -   -   -   -   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   c   c   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -107,9 +107,9 @@ Energy state E = 7, fixed.
 Contact state C as vertical var |
 Queue state Q as horizontal var ->
 -   -   -   -   -   -   -   -   -   -   
--   -   -   c   c   c   c   c   c   c   
--   -   -   -   -   c   c   c   c   c   
--   -   -   -   -   -   -   c   c   c   
+c   c   c   c   c   c   c   c   c   c   
+c   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -122,7 +122,7 @@ Energy state E = 8, fixed.
 Contact state C as vertical var |
 Queue state Q as horizontal var ->
 -   -   -   -   -   -   -   -   -   -   
--   -   -   -   c   c   c   c   c   c   
+c   c   c   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   

@@ -68,9 +68,24 @@ Get_2Dlized_Result(vi,['E','Q'])
 print vi.iter
 # print vi.policy
 
-# _ind1 = [3,4,0]
-# _ind2 = [3,4,1]
-# 
+#c e q
+def supermod(L,R):
+    return L-R>=-0.0000000000001
+
+for c in range(CON_CSIZE):
+    for e in range(1,CON_ESIZE-1):
+        for q in range(1,CON_QSIZE-1):
+            dv1 = vi.V[Trans_tuple_to_index([c,e-1,q+1])] - vi.V[Trans_tuple_to_index([c,e-1,q])]
+            dv2 = vi.V[Trans_tuple_to_index([c,e-1,q])] - vi.V[Trans_tuple_to_index([c,e-1,q-1])]
+            dv3 = vi.V[Trans_tuple_to_index([c,e+1,q+1])] - vi.V[Trans_tuple_to_index([c,e+1,q])]
+            dv4 = vi.V[Trans_tuple_to_index([c,e,q+1])] - vi.V[Trans_tuple_to_index([c,e,q])]
+            L = 0.9*CON_inj_prob*dv1 + 0.9*(1-CON_inj_prob)*dv2 + (Reward(c,e,q+1,A_Q) - Reward(c,e,q,A_Q))
+            R = 0.9*CON_inj_prob*dv3 + 0.9*(1-CON_inj_prob)*dv4 + (Reward(c,e,q+1,A_IDLE) - Reward(c,e,q,A_IDLE))
+            if not supermod(L,R):
+                print "L=",str(L)
+                print "R=",str(R)
+                print "False"
+ 
 # print vi.V[Trans_tuple_to_index(_ind1)],
 # print " should be smaller"
 # print vi.V[Trans_tuple_to_index(_ind2)],
