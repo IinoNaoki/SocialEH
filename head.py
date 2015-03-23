@@ -23,7 +23,7 @@ CON_QSIZE = 10
 CON_DIM = CON_CSIZE * CON_ESIZE * CON_QSIZE
 
 
-CON_inj_prob = 0.0
+CON_inj_prob = 0.4
 
 # define actions
 A_IDLE = 0 # 0: idle
@@ -99,7 +99,7 @@ def Get_Q_mat(act, inj_prob=CON_inj_prob):
     elif act == A_GETE:
         return Q_plus_mat()
     elif act == A_Q:
-        return Q_plus_mat().dot(Q_minus_mat())
+        return Q_minus_mat().dot(Q_plus_mat())
 
 
 def Get_Overall_mat(act):
@@ -116,10 +116,10 @@ def ElecPriceCost(_c):
         exit()
     
     if _c in SET_CHARGER:
-#         return ([-0.00, -0.001, -2.0, -7.0, -40.0, -100.0])[_c]
-        return -np.power(_c, 0.5)*0.2
+        return ([-0.00, -0.001, -2.0, -7.0, -40.0, -100.0])[_c]
+#         return -np.power(_c, 0.5)*0.2
     else:
-        return -65536000000000000.0
+        return -655360000000000000000000.0
 
 def MessengerDeliveryProb(_c):
 #     delvprob = [0.9, 0.7, 0.4, 0.2, 0.1]
