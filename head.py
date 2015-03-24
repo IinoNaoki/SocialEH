@@ -24,7 +24,7 @@ CON_QSIZE = 10
 CON_DIM = CON_CSIZE * CON_ESIZE * CON_QSIZE
 
 
-CON_inj_prob = 0.2
+CON_inj_prob = 0.4
 CON_DISCOUNT = 0.9
 
 # define actions
@@ -138,8 +138,8 @@ def MessengerDeliveryProb(_c):
         return 0.0
 
 def QDelayCost(_q):
-    return -1.0*_q
-#     return -0.0
+#     return -1.0*_q
+    return -0.0
 
 
 
