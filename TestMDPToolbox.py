@@ -17,17 +17,14 @@ def Get_Q_mat(act, inj_prob=CON_inj_prob):
         _q_minus[0][0] = 1.0
         return _q_minus
 
-    if act == 'test':
-        return Q_minus_mat()
-
     if act == A_IDLE:
         return Q_plus_mat()
     elif act == A_GETE:
         return Q_plus_mat()
     elif act == A_Q:
         ret = Q_minus_mat().dot(Q_plus_mat())
-#         ret[CON_QSIZE-1][CON_QSIZE-1] = CON_inj_prob
-#         ret[CON_QSIZE-1][CON_QSIZE-2] = 1.0 - CON_inj_prob
+        ret[0][0] = 1.0
+        ret[0][1] = 0.0
         return ret
     
 print Get_Q_mat(2)

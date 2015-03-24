@@ -9,12 +9,13 @@ import mdptoolbox
 import numpy as np
 from scipy.sparse import csr_matrix as sparse
 
-SET_NOTHING = [0]
-SET_CHARGER = [1,2,3,4,5]
-SET_MESSENGER = [6,7,8,9,10]
+# SET_NOTHING = [0]
+# SET_CHARGER = [1,2,3,4,5]
+# SET_MESSENGER = [6,7,8,9,10]
 # 
-# SET_CHARGER = [] # no charger
-# SET_MESSENGER = [0,1,2,3,4]
+SET_NOTHING = []
+SET_CHARGER = [0,1,2,3,4]
+SET_MESSENGER = [5,6,7,8,9]
 
 CON_CSIZE = len(SET_NOTHING) + len(SET_CHARGER) + len(SET_MESSENGER)
 CON_ESIZE = 10
@@ -23,7 +24,8 @@ CON_QSIZE = 10
 CON_DIM = CON_CSIZE * CON_ESIZE * CON_QSIZE
 
 
-CON_inj_prob = 0.4
+CON_inj_prob = 0.2
+CON_DISCOUNT = 0.9
 
 # define actions
 A_IDLE = 0 # 0: idle
@@ -99,7 +101,10 @@ def Get_Q_mat(act, inj_prob=CON_inj_prob):
     elif act == A_GETE:
         return Q_plus_mat()
     elif act == A_Q:
-        return Q_minus_mat().dot(Q_plus_mat())
+        ret = Q_minus_mat().dot(Q_plus_mat())
+#         ret[0][0] = 1.0
+#         ret[0][1] = 0.0
+        return ret
 
 
 def Get_Overall_mat(act):
@@ -119,7 +124,7 @@ def ElecPriceCost(_c):
         return ([-0.00, -0.001, -2.0, -7.0, -40.0, -100.0])[_c]
 #         return -np.power(_c, 0.5)*0.2
     else:
-        return -655360000000000000000000.0
+        return -6553600000000000000000000000000.0
 
 def MessengerDeliveryProb(_c):
 #     delvprob = [0.9, 0.7, 0.4, 0.2, 0.1]
@@ -130,32 +135,24 @@ def MessengerDeliveryProb(_c):
 #         _prob = 0.5
         return _prob
     else:
-        return -655360000000000000000000.0
+        return 0.0
 
 def QDelayCost(_q):
-#     return -100.0
-#     return -10.0*_q
     return -1.0*_q
-#     return 0.0
+#     return -0.0
 
 
 
-def Reward(_c, _e, _q, action):
-    # forbidded actions:
-#     if (_c not in SET_CHARGER) and action==A_GETE:
-#         return -65536000000000000.0
-#     if (_c not in SET_MESSENGER) and action==A_Q:
-#         return -65536000000000000.0
-    
+def Reward(_c, _e, _q, action):    
     if action == A_IDLE:
         return QDelayCost(_q)
     elif action == A_GETE:
         return ElecPriceCost(_c) + QDelayCost(_q)
     elif action == A_Q:
-        if _e>0 and _q>0:
+        if _e>0 and _q>0 and (_c in SET_MESSENGER):
             return 10.0*MessengerDeliveryProb(_c) + QDelayCost(_q)
         else:
-            return  -655360000000000000000000.0 + QDelayCost(_q)
+            return  -6553600000000000000000000000000.0 + QDelayCost(_q)
     else:
         print "error in Reward()"
         exit()

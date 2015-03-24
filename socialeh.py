@@ -57,7 +57,7 @@ for ic in range(CON_CSIZE):
 P = np.array([ Get_Overall_mat(A_IDLE), Get_Overall_mat(A_GETE), Get_Overall_mat(A_Q) ])
 # P = np.array([ Build_P_mat(A_IDLE), Build_P_mat(A_GETE), Build_P_mat(A_Q) ])
 
-vi = mdptoolbox.mdp.ValueIteration(P, R, 0.90)
+vi = mdptoolbox.mdp.ValueIteration(P, R, CON_DISCOUNT)
 vi.run()
 print "Done"
 # print vi.policy
@@ -68,20 +68,22 @@ Get_2Dlized_Result(vi,['E','Q'])
 print vi.iter
 # print vi.policy
 
-#c e q
+# c e q
 def supermod(L,R):
     return np.round(L)>=np.round(R)
-
+  
 print "start..."
 for c in range(CON_CSIZE):
-    for e in range(1,CON_ESIZE-1):
-        for q in range(1,CON_QSIZE-1):
+    for e in range(1,CON_ESIZE):
+        for q in range(1,CON_QSIZE-2):
             dv1 = vi.V[Trans_tuple_to_index([c,e-1,q+1])] - vi.V[Trans_tuple_to_index([c,e-1,q])]
             dv2 = vi.V[Trans_tuple_to_index([c,e-1,q])] - vi.V[Trans_tuple_to_index([c,e-1,q-1])]
             dv3 = vi.V[Trans_tuple_to_index([c,e,q+2])] - vi.V[Trans_tuple_to_index([c,e,q+1])]
             dv4 = vi.V[Trans_tuple_to_index([c,e,q+1])] - vi.V[Trans_tuple_to_index([c,e,q])]
-            L = 0.9*CON_inj_prob*dv1 + 0.9*(1-CON_inj_prob)*dv2 + (Reward(c,e,q+1,A_Q) - Reward(c,e,q,A_Q))
-            R = 0.9*CON_inj_prob*dv3 + 0.9*(1-CON_inj_prob)*dv4 + (Reward(c,e,q+1,A_IDLE) - Reward(c,e,q,A_IDLE))
+            L = CON_DISCOUNT*CON_inj_prob*dv1 + CON_DISCOUNT*(1-CON_inj_prob)*dv2 + (Reward(c,e,q+1,A_Q) - Reward(c,e,q,A_Q))
+            R = CON_DISCOUNT*CON_inj_prob*dv3 + CON_DISCOUNT*(1-CON_inj_prob)*dv4 + (Reward(c,e,q+1,A_IDLE) - Reward(c,e,q,A_IDLE))
+#             L = (Reward(c,e,q+1,A_Q) - Reward(c,e,q,A_Q))
+#             R = (Reward(c,e,q+1,A_IDLE) - Reward(c,e,q,A_IDLE))
             if not supermod(L,R):
                 print "c="+str(c)
                 print "e="+str(e)
@@ -92,7 +94,20 @@ for c in range(CON_CSIZE):
                 print
 print "end..."
 
-# print vi.V[Trans_tuple_to_index(_ind1)],
-# print " should be smaller"
-# print vi.V[Trans_tuple_to_index(_ind2)],
-# print " should be larger"
+# for c in range(CON_CSIZE):
+#     for e in range(1,CON_ESIZE):
+#         q = 8
+#         L = vi.V[Trans_tuple_to_index([c,e-1,q])] - vi.V[Trans_tuple_to_index([c,e-1,q-1])]
+#         R = vi.V[Trans_tuple_to_index([c,e,q+1])] - vi.V[Trans_tuple_to_index([c,e,q])]
+#         if not supermod(L,R):
+#             print "L<R", "[L,R]="+str([L,R])
+#             print "[c,q]="+str([c,e])
+
+# for c in range(CON_CSIZE):
+#     for e in range(CON_ESIZE):
+# #         aa = vi.V[Trans_tuple_to_index([c,e,1])] - vi.V[Trans_tuple_to_index([c,e,0])]
+#         L = vi.V[Trans_tuple_to_index([c,e-1,2])] - vi.V[Trans_tuple_to_index([c,e-1,1])]
+#         print L
+            
+# print vi.policy[Trans_tuple_to_index([6,2,7])]
+# print vi.policy[Trans_tuple_to_index([6,2,8])]
