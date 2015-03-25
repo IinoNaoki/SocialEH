@@ -138,8 +138,8 @@ def MessengerDeliveryProb(_c):
         return 0.0
 
 def QDelayCost(_q):
-#     return -1.0*_q
-    return -0.0
+    return -10.0*_q
+#     return -0.0
 
 
 
@@ -150,7 +150,7 @@ def Reward(_c, _e, _q, action):
         return ElecPriceCost(_c) + QDelayCost(_q)
     elif action == A_Q:
         if _e>0 and _q>0 and (_c in SET_MESSENGER):
-            return 10.0*MessengerDeliveryProb(_c) + QDelayCost(_q)
+            return 100.0*MessengerDeliveryProb(_c) + QDelayCost(_q)
         else:
             return  -6553600000000000000000000000000.0 + QDelayCost(_q)
     else:

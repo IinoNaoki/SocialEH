@@ -3,9 +3,9 @@ Contact state C as vertical var |
 Energy state E as horizontal var ->
 c   c   c   c   c   c   c   c   c   -   
 c   c   c   c   c   c   c   c   c   -   
+c   c   c   c   c   c   -   -   -   -   
+c   c   c   -   -   -   -   -   -   -   
 c   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
 -   -   -   -   -   -   -   -   -   -   
@@ -17,11 +17,11 @@ Contact state C as vertical var |
 Energy state E as horizontal var ->
 c   c   c   c   c   c   c   c   c   -   
 c   c   c   c   c   c   c   c   c   -   
-c   c   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
+c   c   c   c   c   c   c   -   -   -   
+c   c   c   c   -   -   -   -   -   -   
+c   -   -   -   -   -   -   -   -   -   
+-   -   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -31,11 +31,11 @@ Contact state C as vertical var |
 Energy state E as horizontal var ->
 c   c   c   c   c   c   c   c   c   -   
 c   c   c   c   c   c   c   c   c   -   
+c   c   c   c   c   c   c   -   -   -   
+c   c   c   c   c   -   -   -   -   -   
 c   c   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -45,11 +45,11 @@ Contact state C as vertical var |
 Energy state E as horizontal var ->
 c   c   c   c   c   c   c   c   c   -   
 c   c   c   c   c   c   c   c   c   -   
+c   c   c   c   c   c   c   c   -   -   
+c   c   c   c   c   -   -   -   -   -   
 c   c   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   Q   Q   
--   -   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -59,11 +59,11 @@ Contact state C as vertical var |
 Energy state E as horizontal var ->
 c   c   c   c   c   c   c   c   c   -   
 c   c   c   c   c   c   c   c   c   -   
+c   c   c   c   c   c   c   c   -   -   
+c   c   c   c   c   c   -   -   -   -   
 c   c   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   Q   Q   Q   Q   Q   
--   -   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -73,11 +73,11 @@ Contact state C as vertical var |
 Energy state E as horizontal var ->
 c   c   c   c   c   c   c   c   c   -   
 c   c   c   c   c   c   c   c   c   -   
+c   c   c   c   c   c   c   c   c   -   
+c   c   c   c   c   c   -   -   -   -   
 c   c   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   Q   Q   Q   Q   Q   
--   -   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -87,11 +87,11 @@ Contact state C as vertical var |
 Energy state E as horizontal var ->
 c   c   c   c   c   c   c   c   c   -   
 c   c   c   c   c   c   c   c   c   -   
+c   c   c   c   c   c   c   c   c   -   
+c   c   c   c   c   c   c   -   -   -   
 c   c   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   Q   Q   Q   Q   Q   
--   -   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -101,11 +101,11 @@ Contact state C as vertical var |
 Energy state E as horizontal var ->
 c   c   c   c   c   c   c   c   c   -   
 c   c   c   c   c   c   c   c   c   -   
+c   c   c   c   c   c   c   c   c   -   
+c   c   c   c   c   c   c   -   -   -   
 c   c   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   Q   Q   Q   Q   Q   
--   -   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -115,11 +115,11 @@ Contact state C as vertical var |
 Energy state E as horizontal var ->
 c   c   c   c   c   c   c   c   c   -   
 c   c   c   c   c   c   c   c   c   -   
+c   c   c   c   c   c   c   c   c   -   
+c   c   c   c   c   c   c   -   -   -   
 c   c   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   Q   Q   Q   Q   Q   
 -   -   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
@@ -129,10 +129,10 @@ Contact state C as vertical var |
 Energy state E as horizontal var ->
 c   c   c   c   c   c   c   c   c   -   
 c   c   c   c   c   c   c   c   c   -   
-c   c   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   -   -   -   -   -   
--   -   -   -   -   Q   Q   Q   Q   Q   
+c   c   c   c   c   c   c   c   c   -   
+c   c   c   c   c   c   c   -   -   -   
+c   -   -   -   -   -   -   -   -   -   
+-   -   -   Q   Q   Q   Q   Q   Q   Q   
 -   -   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
 -   Q   Q   Q   Q   Q   Q   Q   Q   Q   
