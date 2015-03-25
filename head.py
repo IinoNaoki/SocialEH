@@ -13,9 +13,9 @@ from scipy.sparse import csr_matrix as sparse
 # SET_CHARGER = [1,2,3,4,5]
 # SET_MESSENGER = [6,7,8,9,10]
 # 
-SET_NOTHING = []
-SET_CHARGER = [0,1,2,3,4]
-SET_MESSENGER = [5,6,7,8,9]
+SET_NOTHING = [0]
+SET_CHARGER = [1,2,3,4,5]
+SET_MESSENGER = [6,7,8,9,10]
 
 CON_CSIZE = len(SET_NOTHING) + len(SET_CHARGER) + len(SET_MESSENGER)
 CON_ESIZE = 10
@@ -138,8 +138,8 @@ def MessengerDeliveryProb(_c):
         return 0.0
 
 def QDelayCost(_q):
-    return -10.0*_q
-#     return -0.0
+#     return -1.0*_q
+    return -0.0
 
 
 
@@ -150,7 +150,7 @@ def Reward(_c, _e, _q, action):
         return ElecPriceCost(_c) + QDelayCost(_q)
     elif action == A_Q:
         if _e>0 and _q>0 and (_c in SET_MESSENGER):
-            return 100.0*MessengerDeliveryProb(_c) + QDelayCost(_q)
+            return 10.0*MessengerDeliveryProb(_c) + QDelayCost(_q)
         else:
             return  -6553600000000000000000000000000.0 + QDelayCost(_q)
     else:

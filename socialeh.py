@@ -72,27 +72,27 @@ print vi.iter
 def supermod(L,R):
     return np.round(L)>=np.round(R)
   
-# print "start..."
-# for c in range(CON_CSIZE):
-#     for e in range(1,CON_ESIZE):
-#         for q in range(1,CON_QSIZE-2):
-#             dv1 = vi.V[Trans_tuple_to_index([c,e-1,q+1])] - vi.V[Trans_tuple_to_index([c,e-1,q])]
-#             dv2 = vi.V[Trans_tuple_to_index([c,e-1,q])] - vi.V[Trans_tuple_to_index([c,e-1,q-1])]
-#             dv3 = vi.V[Trans_tuple_to_index([c,e,q+2])] - vi.V[Trans_tuple_to_index([c,e,q+1])]
-#             dv4 = vi.V[Trans_tuple_to_index([c,e,q+1])] - vi.V[Trans_tuple_to_index([c,e,q])]
-#             L = CON_DISCOUNT*CON_inj_prob*dv1 + CON_DISCOUNT*(1-CON_inj_prob)*dv2 + (Reward(c,e,q+1,A_Q) - Reward(c,e,q,A_Q))
-#             R = CON_DISCOUNT*CON_inj_prob*dv3 + CON_DISCOUNT*(1-CON_inj_prob)*dv4 + (Reward(c,e,q+1,A_IDLE) - Reward(c,e,q,A_IDLE))
-# #             L = (Reward(c,e,q+1,A_Q) - Reward(c,e,q,A_Q))
-# #             R = (Reward(c,e,q+1,A_IDLE) - Reward(c,e,q,A_IDLE))
-#             if not supermod(L,R):
-#                 print "c="+str(c)
-#                 print "e="+str(e)
-#                 print "q="+str(q)
-#                 print "L=",str(L)
-#                 print "R=",str(R)
-#                 print "False"
-#                 print
-# print "end..."
+print "start..."
+for c in range(CON_CSIZE):
+    for e in range(1,CON_ESIZE):
+        for q in range(1,CON_QSIZE-2):
+            dv1 = vi.V[Trans_tuple_to_index([c,e-1,q+1])] - vi.V[Trans_tuple_to_index([c,e-1,q])]
+            dv2 = vi.V[Trans_tuple_to_index([c,e-1,q])] - vi.V[Trans_tuple_to_index([c,e-1,q-1])]
+            dv3 = vi.V[Trans_tuple_to_index([c,e,q+2])] - vi.V[Trans_tuple_to_index([c,e,q+1])]
+            dv4 = vi.V[Trans_tuple_to_index([c,e,q+1])] - vi.V[Trans_tuple_to_index([c,e,q])]
+            L = CON_DISCOUNT*CON_inj_prob*dv1 + CON_DISCOUNT*(1-CON_inj_prob)*dv2 + (Reward(c,e,q+1,A_Q) - Reward(c,e,q,A_Q))
+            R = CON_DISCOUNT*CON_inj_prob*dv3 + CON_DISCOUNT*(1-CON_inj_prob)*dv4 + (Reward(c,e,q+1,A_IDLE) - Reward(c,e,q,A_IDLE))
+#             L = (Reward(c,e,q+1,A_Q) - Reward(c,e,q,A_Q))
+#             R = (Reward(c,e,q+1,A_IDLE) - Reward(c,e,q,A_IDLE))
+            if not supermod(L,R):
+                print "c="+str(c)
+                print "e="+str(e)
+                print "q="+str(q)
+                print "L=",str(L)
+                print "R=",str(R)
+                print "False"
+                print
+print "end..."
 
 # for c in range(CON_CSIZE):
 #     for e in range(1,CON_ESIZE):
