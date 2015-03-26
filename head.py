@@ -123,6 +123,7 @@ def ElecPriceCost(_c):
     if _c in SET_CHARGER:
         return ([-0.00, -0.001, -2.0, -7.0, -40.0, -100.0])[_c]
 #         return -np.power(_c, 0.5)*0.2
+#         return 0.0
     else:
         return -6553600000000000000000000000000.0
 

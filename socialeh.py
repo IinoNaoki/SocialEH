@@ -82,8 +82,7 @@ for c in range(CON_CSIZE):
             dv4 = vi.V[Trans_tuple_to_index([c,e,q+1])] - vi.V[Trans_tuple_to_index([c,e,q])]
             L = CON_DISCOUNT*CON_inj_prob*dv1 + CON_DISCOUNT*(1-CON_inj_prob)*dv2 + (Reward(c,e,q+1,A_Q) - Reward(c,e,q,A_Q))
             R = CON_DISCOUNT*CON_inj_prob*dv3 + CON_DISCOUNT*(1-CON_inj_prob)*dv4 + (Reward(c,e,q+1,A_IDLE) - Reward(c,e,q,A_IDLE))
-#             L = (Reward(c,e,q+1,A_Q) - Reward(c,e,q,A_Q))
-#             R = (Reward(c,e,q+1,A_IDLE) - Reward(c,e,q,A_IDLE))
+
             if not supermod(L,R):
                 print "c="+str(c)
                 print "e="+str(e)
@@ -94,14 +93,7 @@ for c in range(CON_CSIZE):
                 print
 print "end..."
 
-# for c in range(CON_CSIZE):
-#     for e in range(1,CON_ESIZE):
-#         q = 8
-#         L = vi.V[Trans_tuple_to_index([c,e-1,q])] - vi.V[Trans_tuple_to_index([c,e-1,q-1])]
-#         R = vi.V[Trans_tuple_to_index([c,e,q+1])] - vi.V[Trans_tuple_to_index([c,e,q])]
-#         if not supermod(L,R):
-#             print "L<R", "[L,R]="+str([L,R])
-#             print "[c,q]="+str([c,e])
+
 
 for c in range(CON_CSIZE):
     for e in range(CON_ESIZE):
