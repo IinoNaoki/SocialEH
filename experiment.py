@@ -111,7 +111,7 @@ class Experiment(object):
             exit()
         
         if _c in self.SET_CHARGER:
-            return ([-0.00, -0.001, -2.0, -7.0, -40.0, -100.0])[_c]
+            return ([-0.00, -1.00, -4.0, -9.0, -16.0, -25.0, -36.0])[_c]
     #         return -np.power(_c, 0.5)*0.2
     #         return 0.0
         else:
@@ -119,7 +119,7 @@ class Experiment(object):
     
     def MessengerDeliveryProb(self, _c):
     #     delvprob = [0.9, 0.7, 0.4, 0.2, 0.1]
-        delvprob = [0.1, 0.3, 0.5, 0.7, 0.9]
+        delvprob = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
         if _c in self.SET_MESSENGER:
     #         _prob = np.power( (CON_CSIZE-1.0-_c)/(len(SET_MESSENGER)-1.0) , 0.8)
             _prob = delvprob[self.SET_MESSENGER.index(_c)]

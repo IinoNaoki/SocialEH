@@ -19,6 +19,7 @@ class Util(object):
         self.CON_CSIZE = paras.CON_CSIZE
         self.CON_ESIZE = paras.CON_ESIZE
         self.CON_QSIZE = paras.CON_QSIZE
+        self.CON_DIM = self.CON_CSIZE * self.CON_ESIZE * self.CON_QSIZE
 
     def Trans_tuple_to_index(self, lis):        
         if len(lis)!=3:
@@ -29,7 +30,13 @@ class Util(object):
         prod_right = np.transpose(np.array([self.CON_ESIZE * self.CON_QSIZE, \
                                             self.CON_QSIZE, \
                                             1.0]))
-        return int(prod_left.dot(prod_right)) 
+        return int(prod_left.dot(prod_right))
+    
+    def Trans_index_to_tuple(self, ind):
+        div, q = divmod(ind, self.CON_QSIZE)
+        div, e = divmod(div, self.CON_ESIZE)
+        c = div
+        return c,e,q
         
     def Action_2Dlized_Result(self, _vi, _displist, _name):
         sizelist = [self.CON_CSIZE, self.CON_ESIZE, self.CON_QSIZE]
@@ -64,3 +71,25 @@ class Util(object):
                 f.write('\n')
             f.write('\n')
         f.write('\n')   
+        
+    def SteadyStateMatrix(self, transmat, policy, params):
+        expanded_matrix = np.matrix( [[None for _ in range(self.CON_DIM)] for _ in range(self.CON_DIM)] )
+        
+        for s1 in range(self.CON_DIM):
+            for s2 in range(self.CON_DIM):
+                act = policy[s1]
+                expanded_matrix[s1, s2] = transmat[act][s1][s2]
+                
+        p_hat = expanded_matrix - np.diag(np.array([1.0 for _ in range(self.CON_DIM)]))
+        for x in range(self.CON_DIM):
+            p_hat[x,self.CON_DIM-1] = 1.0
+        a_rhs = np.zeros(self.CON_DIM)
+        a_rhs[self.CON_DIM-1] = 1.0
+        steady_p = a_rhs.dot(p_hat.getI())       
+        
+        steady_p_transf = np.asarray([None for _ in range(self.CON_DIM)])
+        
+        for s in range(self.CON_DIM):
+                steady_p_transf[s] = steady_p[0,s]
+        return steady_p_transf
+    
