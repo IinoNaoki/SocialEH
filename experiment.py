@@ -45,18 +45,6 @@ class Experiment(object):
         C_mat = np.zeros((self.CON_CSIZE, self.CON_CSIZE))
         C_mat[:] = 1.0/self.CON_CSIZE
         return C_mat
-        
-#         C_mat = np.zeros((self.CON_CSIZE, self.CON_CSIZE))
-#         for j in range(self.CON_CSIZE):
-#             rnd_lis = []
-#             for i in range(self.CON_CSIZE):
-#                 rnd_lis.append(random.randint(1,10))
-#                 sum_rnd = sum(rnd_lis)
-#                 rnd_lis = [i*1.0/sum_rnd for i in rnd_lis]
-#             for i in range(self.CON_CSIZE):
-#                 C_mat[j][i] = rnd_lis[i]
-#         print C_mat
-#         return C_mat
     
     
     def Get_E_mat(self, act):

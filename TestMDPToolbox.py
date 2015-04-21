@@ -1,5 +1,4 @@
 
 import numpy as np
 
-a = [1,2,3]
-print sum(a)
+print range(2,11)

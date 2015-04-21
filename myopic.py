@@ -78,6 +78,10 @@ class BaseLineScheme(object):
                     for act in self.SET_A:
                         rew[act] = self.RewardMat[ind][act]
                     max_a = np.argmax(rew)
+                    if (ic in self.SET_CHARGER) and (rew[0]==rew[1]):
+                        max_a = 1
+                    if (ic in self.SET_MESSENGER) and (rew[0]==rew[2]):
+                        max_a = 2
                     self.policy[ind] = max_a
                     
     
@@ -103,7 +107,7 @@ class BaseLineScheme(object):
                 if variation < self.epsi:
                     break
         else:
-            V_avg = np.zeros(self.CON_DIM)
+            V_avg_for_rand_scheme = np.zeros(self.CON_DIM)
             _RND_COUNT = 10
             for _ in range(_RND_COUNT):
                 while True:
@@ -115,10 +119,10 @@ class BaseLineScheme(object):
                             self.V[_s] = self.RewardMat[_s][_a] + self.disc*self.TransMat[_a][_s][_s1] 
                     variation = np.fabs((self.V - Vprev).max())
                     if variation < self.epsi: 
-                        V_avg += self.V
+                        V_avg_for_rand_scheme += self.V
                         break
-            V_avg /= (1.0*_RND_COUNT)
-            self.V = V_avg
+            V_avg_for_rand_scheme /= (1.0*_RND_COUNT)
+            self.V = V_avg_for_rand_scheme
             
         self.policy = tuple(self.policy.tolist())
         self.V = tuple(self.V.tolist())
