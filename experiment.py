@@ -10,6 +10,7 @@ import numpy as np
 from scipy.sparse import csr_matrix as sparse
 from util import Util
 import myopic
+import random
 # from parameters import Parameters
 
 
@@ -21,11 +22,15 @@ class Experiment(object):
         self.SET_NOTHING = para.SET_NOTHING
         self.SET_CHARGER = para.SET_CHARGER
         self.SET_MESSENGER = para.SET_MESSENGER
+        self.LIST_CHARGING_PRICE = para.LIST_CHARGING_PRICE
+        self.LIST_SENDING_PROB = para.LIST_SENDING_PROB
+        self.CON_SENDING_GAIN = para.CON_SENDING_GAIN
         self.CON_CSIZE = para.CON_CSIZE
         self.CON_ESIZE = para.CON_ESIZE
         self.CON_QSIZE = para.CON_QSIZE
         self.CON_DIM = self.CON_CSIZE * self.CON_ESIZE * self.CON_QSIZE
         self.CON_inj_prob = para.CON_inj_prob
+        self.CON_charge_prob = para.CON_charge_prob
         self.CON_DISCOUNT = para.CON_DISCOUNT
         
         self.A_IDLE = 0 # 0: idle
@@ -40,14 +45,26 @@ class Experiment(object):
         C_mat = np.zeros((self.CON_CSIZE, self.CON_CSIZE))
         C_mat[:] = 1.0/self.CON_CSIZE
         return C_mat
+        
+#         C_mat = np.zeros((self.CON_CSIZE, self.CON_CSIZE))
+#         for j in range(self.CON_CSIZE):
+#             rnd_lis = []
+#             for i in range(self.CON_CSIZE):
+#                 rnd_lis.append(random.randint(1,10))
+#                 sum_rnd = sum(rnd_lis)
+#                 rnd_lis = [i*1.0/sum_rnd for i in rnd_lis]
+#             for i in range(self.CON_CSIZE):
+#                 C_mat[j][i] = rnd_lis[i]
+#         print C_mat
+#         return C_mat
     
     
     def Get_E_mat(self, act):
-        #
         def E_plus_mat(chg=1):
             _e_plus = np.zeros((self.CON_ESIZE, self.CON_ESIZE))
             for i in range(self.CON_ESIZE-1):
-                _e_plus[i][i+1] = 1.0
+                _e_plus[i][i+1] = self.CON_charge_prob
+                _e_plus[i][i] = 1.0 - self.CON_charge_prob
             _e_plus[self.CON_ESIZE-1][self.CON_ESIZE-1] = 1.0
             return _e_plus
         
@@ -111,18 +128,16 @@ class Experiment(object):
             exit()
         
         if _c in self.SET_CHARGER:
-            return ([-0.00, -1.00, -4.0, -9.0, -16.0, -25.0, -36.0])[_c]
+            return self.LIST_CHARGING_PRICE[self.SET_CHARGER.index(_c)]
     #         return -np.power(_c, 0.5)*0.2
     #         return 0.0
         else:
             return -6553600000000000000000000000000.0
     
     def MessengerDeliveryProb(self, _c):
-    #     delvprob = [0.9, 0.7, 0.4, 0.2, 0.1]
-        delvprob = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
         if _c in self.SET_MESSENGER:
     #         _prob = np.power( (CON_CSIZE-1.0-_c)/(len(SET_MESSENGER)-1.0) , 0.8)
-            _prob = delvprob[self.SET_MESSENGER.index(_c)]
+            _prob = self.LIST_SENDING_PROB[self.SET_MESSENGER.index(_c)]
     #         _prob = 0.5
             return _prob
         else:
@@ -141,7 +156,7 @@ class Experiment(object):
             return self.ElecPriceCost(_c) + self.QDelayCost(_q)
         elif action == self.A_Q:
             if _e>0 and _q>0 and (_c in self.SET_MESSENGER):
-                return 50.0*self.MessengerDeliveryProb(_c) + self.QDelayCost(_q)
+                return self.CON_SENDING_GAIN * self.MessengerDeliveryProb(_c) + self.QDelayCost(_q)
             else:
                 return  -6553600000000000000000000000000.0 + self.QDelayCost(_q)
         else:

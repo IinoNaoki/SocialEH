@@ -1,7 +1,5 @@
 
 import numpy as np
 
-rem, modnum = divmod(10,3)
-
-print rem
-print modnum
+a = [1,2,3]
+print sum(a)

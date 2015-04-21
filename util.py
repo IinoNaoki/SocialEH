@@ -73,19 +73,19 @@ class Util(object):
         f.write('\n')   
         
     def SteadyStateMatrix(self, transmat, policy, params):
-        expanded_matrix = np.matrix( [[None for _ in range(self.CON_DIM)] for _ in range(self.CON_DIM)] )
+        pp_matrix = np.matrix( [[None for _ in range(self.CON_DIM)] for _ in range(self.CON_DIM)] )
         
         for s1 in range(self.CON_DIM):
             for s2 in range(self.CON_DIM):
                 act = policy[s1]
-                expanded_matrix[s1, s2] = transmat[act][s1][s2]
+                pp_matrix[s1, s2] = transmat[act][s1][s2]
                 
-        p_hat = expanded_matrix - np.diag(np.array([1.0 for _ in range(self.CON_DIM)]))
+        p_hat = pp_matrix - np.diag(np.array([1.0 for _ in range(self.CON_DIM)]))
         for x in range(self.CON_DIM):
-            p_hat[x,self.CON_DIM-1] = 1.0
+            p_hat[x, self.CON_DIM-1] = 1.0
         a_rhs = np.zeros(self.CON_DIM)
         a_rhs[self.CON_DIM-1] = 1.0
-        steady_p = a_rhs.dot(p_hat.getI())       
+        steady_p = a_rhs * p_hat.getI()       
         
         steady_p_transf = np.asarray([None for _ in range(self.CON_DIM)])
         
