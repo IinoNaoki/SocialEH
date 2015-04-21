@@ -15,25 +15,33 @@ import numpy as np
 s_nothing, s_charger, s_messenger = [0], [1,2,3,4,5,6], [7,8,9,10,11,12]
 
 charging_price = [-0.00, -1.00, -4.0, -9.0, -16.0, -25.0]
+# charging_price = [-0.00, -0.00, -0.0, -0.0, -0.0, -0.0]
 sending_prob = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
-sending_gain = 50.0
+sending_gain = 15.0
 
 if (len(s_charger) != len(charging_price)) or (len(s_messenger)!=len(sending_prob)):
     print "Error, head of main.py"
     exit(0)
 
-csize, esize, qsize = len(s_nothing) + len(s_charger) + len(s_messenger), 10, 10
+csize = len(s_nothing) + len(s_charger) + len(s_messenger)
+esize = 10
+qsize = None #10
 
 inj_prob, charge_prob = 0.4, 0.9
 
 discount = 0.9
 ################################################################## 
-testset = ['MDP', 'CAS', 'GREEDY', 'RANDOM']
 
-for j,t in enumerate(testset):    
-    print t+": Avg. value:"
-    vi = [None for _ in range(len(testset))]
-    for qsize in range(2,8):
+
+TEST_SET = ['MDP', 'CAS', 'GREEDY', 'RANDOM']
+TEST_RANGE = range(2,11)    # q in [2,...,10]
+
+for j,t in enumerate(TEST_SET):        
+    # to store results
+    exp_value_lis, steady_value_lis, steady_chg_rate_lis, steady_snd_rate_lis = [], [], [], []
+    
+    vi = [None for _ in range(len(TEST_SET))]
+    for qsize in TEST_RANGE:
         para = Parameters(s_nothing, s_charger, s_messenger, \
                           charging_price, sending_prob, sending_gain,\
                           csize, esize, qsize, \
@@ -43,24 +51,32 @@ for j,t in enumerate(testset):
         
         R, P, vi[j] = expt.Build_Problem(t)
         vi[j].run()
-#         print str(sum(vi[j].V)*1.0/P[0].shape[0]),
-#         print '  ',
-#         print
+        
+        exp_value_lis.append( sum(vi[j].V)*1.0/(csize*esize*qsize) )
+        
         steadys = util.SteadyStateMatrix(P, vi[j].policy, para)
-        steady_act_charge = 0.0
-        steady_act_send = 0.0
+        
+        _steady_v = 0.0
+        _steady_act_charge = 0.0
+        _steady_act_send = 0.0
         for s in range(csize*esize*qsize):
             c1,e1,q1 = util.Trans_index_to_tuple(s)
-            
             if c1 in s_charger:
-                steady_act_charge += vi[j].policy[s] * steadys[s]
-                
+                _steady_act_charge += vi[j].policy[s] * steadys[s]
             if c1 in s_messenger:
-                steady_act_send += vi[j].policy[s]/2.0 * steadys[s]        
-
-        print [steady_act_charge, steady_act_send],
-        print '   ',
-        util.Action_2Dlized_Result(vi[j], ['C','E'],t)
-        util.Action_2Dlized_Result(vi[j], ['C','Q'],t)
-        util.Action_2Dlized_Result(vi[j], ['E','Q'],t)
+                _steady_act_send += vi[j].policy[s]/2.0 * steadys[s]        
+            _steady_v += vi[j].V[s] * steadys[s]
+        steady_value_lis.append(_steady_v)
+        steady_chg_rate_lis.append(_steady_act_charge)
+        steady_snd_rate_lis.append(_steady_act_send)
+    
+    print " -- "+ t +" --"
+    print "Expected valuation: ",
+    print exp_value_lis
+    print "Steady state valuation: ",
+    print steady_value_lis
+    print "Charging rate: ",
+    print steady_chg_rate_lis
+    print "Sending rate: ",
+    print steady_snd_rate_lis
     print
