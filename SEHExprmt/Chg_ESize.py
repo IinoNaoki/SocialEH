@@ -3,19 +3,20 @@ Created on 21 Apr, 2015
 
 @author: yzhang28
 '''
-
+import pickle
 from experiment import Experiment
 from parameters import Parameters
 import myopic
 from util import Util
 import numpy as np
 
+import sys
+sys.path.append("..")
 
 ##################################################################
 s_nothing, s_charger, s_messenger = [0], [1,2,3,4,5,6], [7,8,9,10,11,12]
 
 charging_price = [-0.00, -1.00, -4.0, -9.0, -16.0, -25.0]
-# charging_price = [-0.00, -0.00, -0.0, -0.0, -0.0, -0.0]
 sending_prob = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
 sending_gain = 15.0
 
@@ -33,7 +34,7 @@ discount = 0.9
 ################################################################## 
 
 
-TEST_SET = ['MDP', 'CAS', 'GREEDY', 'RANDOM']
+TEST_SET = ['MDP', 'CAS', 'GREEDY', 'RANDOM', 'THRESHOLDRANDOM']
 TEST_RANGE = range(2,11)    # e in [2,...,10]
 
 for j,t in enumerate(TEST_SET):        
@@ -70,13 +71,38 @@ for j,t in enumerate(TEST_SET):
         steady_chg_rate_lis.append(_steady_act_charge)
         steady_snd_rate_lis.append(_steady_act_send)
     
-    print " -- "+ t +" --"
-    print "Expected valuation: ",
-    print exp_value_lis
-    print "Steady state valuation: ",
-    print steady_value_lis
-    print "Charging rate: ",
-    print steady_chg_rate_lis
-    print "Sending rate: ",
-    print steady_snd_rate_lis
-    print
+    if j==0:
+        f = open("./Chg_ESize_result.txt","w")
+    else:
+        f = open("./Chg_ESize_result.txt","a")
+    f.write(" -- "+ t +" --\n")
+    f.write(" > Expd_Val:  ")
+    for item in exp_value_lis:
+        f.write(str(item))
+        f.write("   ")
+    f.write("\n")
+    f.write(" > Steady_Val:  ")
+    for item in steady_value_lis:
+        f.write(str(item))
+        f.write("   ")
+    f.write("\n")
+    f.write(" > Chg_Rate:  ")
+    for item in steady_chg_rate_lis:
+        f.write(str(item))
+        f.write("   ")
+    f.write("\n")
+    f.write(" > Send_Rate:  ")
+    for item in steady_snd_rate_lis:
+        f.write(str(item))
+        f.write("   ")
+    f.write("\n\n")
+    f.close()
+    
+    print "Dumping...["+str(TEST_SET.index(t)+1)+"/"+str(len(TEST_SET))+"]"
+    pickle.dump(exp_value_lis, open("../rawresults/ESize/exp_value_lis_"+'_'+t,"w"))
+    pickle.dump(steady_value_lis, open("../rawresults/ESize/steady_value_lis"+'_'+t,"w"))
+    pickle.dump(steady_chg_rate_lis, open("../rawresults/ESize/steady_chg_rate_lis_"+'_'+t,"w"))
+    pickle.dump(steady_snd_rate_lis, open("../rawresults/ESize/steady_snd_rate_lis_"+'_'+t,"w"))
+pickle.dump(TEST_SET, open("../rawresults/ESize/TEST_SET","w"))
+pickle.dump(TEST_RANGE, open("../rawresults/ESize/TEST_RANGE","w"))
+print "FINISHED!"

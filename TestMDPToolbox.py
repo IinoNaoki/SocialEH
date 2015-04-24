@@ -1,4 +1,7 @@
 
 import numpy as np
+import random
 
-print range(2,11)
+a = [1,2,3]
+b = -1*a
+print b

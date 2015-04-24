@@ -1,0 +1,52 @@
+Energy state E = 0, fixed.
+Contact state C as vertical var |
+Queue state Q as horizontal var ->
+-   -   -   -   -   -   -   -   -   -   
+c   c   c   c   c   c   c   c   c   c   
+-   -   c   -   -   -   -   c   c   c   
+-   -   -   -   -   -   c   c   -   -   
+-   -   -   -   c   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+
+Energy state E = 1, fixed.
+Contact state C as vertical var |
+Queue state Q as horizontal var ->
+-   -   -   -   -   -   -   -   -   -   
+c   -   -   c   c   -   -   -   c   c   
+-   c   -   -   -   -   -   c   -   -   
+-   -   -   -   -   -   -   -   c   -   
+-   -   -   -   -   -   -   c   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+
+Energy state E = 2, fixed.
+Contact state C as vertical var |
+Queue state Q as horizontal var ->
+-   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   -   -   -   -   -   -   -   -   -   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+-   Q   Q   Q   Q   Q   Q   Q   Q   Q   
+
+

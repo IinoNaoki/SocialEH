@@ -54,7 +54,7 @@ class Util(object):
                 NON_DISP_STATE = sizelist[i]
                 NON_DISP_INDEX = i
         
-        f = open('./'+_name+'/MAT-'+str(dim1)+'-'+str(dim2),'w')
+        f = open('../'+_name+'/MAT-'+str(dim1)+'-'+str(dim2),'w')
         for nondispstate in range(NON_DISP_STATE):
             f.write( str(easynamelist[NON_DISP_INDEX])+' = '+str(nondispstate)+', fixed.\n')
             f.write( str(easynamelist[ind_dim1])+' as vertical var |\n')

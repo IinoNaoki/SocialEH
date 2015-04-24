@@ -1,0 +1,171 @@
+Queue state Q = 0, fixed.
+Contact state C as vertical var |
+Energy state E as horizontal var ->
+-   -   -   
+c   c   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+
+Queue state Q = 1, fixed.
+Contact state C as vertical var |
+Energy state E as horizontal var ->
+-   -   -   
+c   -   -   
+-   c   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+
+Queue state Q = 2, fixed.
+Contact state C as vertical var |
+Energy state E as horizontal var ->
+-   -   -   
+c   -   -   
+c   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+
+Queue state Q = 3, fixed.
+Contact state C as vertical var |
+Energy state E as horizontal var ->
+-   -   -   
+c   c   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+
+Queue state Q = 4, fixed.
+Contact state C as vertical var |
+Energy state E as horizontal var ->
+-   -   -   
+c   c   -   
+-   -   -   
+-   -   -   
+c   -   -   
+-   -   -   
+-   -   -   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+
+Queue state Q = 5, fixed.
+Contact state C as vertical var |
+Energy state E as horizontal var ->
+-   -   -   
+c   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+
+Queue state Q = 6, fixed.
+Contact state C as vertical var |
+Energy state E as horizontal var ->
+-   -   -   
+c   -   -   
+-   -   -   
+c   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+
+Queue state Q = 7, fixed.
+Contact state C as vertical var |
+Energy state E as horizontal var ->
+-   -   -   
+c   -   -   
+c   c   -   
+c   -   -   
+-   c   -   
+-   -   -   
+-   -   -   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+
+Queue state Q = 8, fixed.
+Contact state C as vertical var |
+Energy state E as horizontal var ->
+-   -   -   
+c   c   -   
+c   -   -   
+-   c   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+
+Queue state Q = 9, fixed.
+Contact state C as vertical var |
+Energy state E as horizontal var ->
+-   -   -   
+c   c   -   
+c   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   -   -   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+-   Q   Q   
+
+

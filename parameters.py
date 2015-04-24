@@ -12,7 +12,7 @@ class Parameters(object):
                  charging_price, sending_prob, sending_gain,\
                  csize, esize, qsize, \
                  inj_prob, charge_prob, \
-                 discount):
+                 discount, extra_para_lis=[]):
         
         self.SET_NOTHING = s_nothing
         self.SET_CHARGER = s_charger
@@ -27,3 +27,5 @@ class Parameters(object):
         self.CON_inj_prob = inj_prob
         self.CON_charge_prob = charge_prob
         self.CON_DISCOUNT = discount
+        
+        self.LIST_EXTRA_PARA = extra_para_lis

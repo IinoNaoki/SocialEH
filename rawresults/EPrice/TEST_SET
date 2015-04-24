@@ -1,0 +1,12 @@
+(lp0
+S'MDP'
+p1
+aS'CAS'
+p2
+aS'GREEDY'
+p3
+aS'RANDOM'
+p4
+aS'THRESHOLDRANDOM'
+p5
+a.

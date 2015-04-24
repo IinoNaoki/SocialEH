@@ -75,7 +75,6 @@ class Experiment(object):
         
     
     def Get_Q_mat(self, act, inj_prob):
-            #
         def Q_plus_mat(getQ=1, inj=inj_prob):
             _q_plus = np.zeros((self.CON_QSIZE,self.CON_QSIZE))
             for i in range(self.CON_QSIZE-1):
