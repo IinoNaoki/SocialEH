@@ -40,7 +40,7 @@ discount = 0.9
 ################################################################## 
 
 
-TEST_SET = ['GREEDY', 'RANDOM', 'THRESHOLDRANDOM']
+TEST_SET = ['GREEDY', 'RANDOM', 'THRESHOLDRANDOM', 'MDP']
 TEST_RANGE = [0,1,2,3,4,5,6,7,8,9,10]
 
 def paralist_func(item):
@@ -56,19 +56,6 @@ def paralist_func(item):
             range(int(s*8.0/24.0)),
             range(int(s*9.0/24.0)),
             range(int(s))]
-#     cset = [[1]]
-    # 1/4, 1/7
-    
-#     cset = [
-#             [random.choice(range(csize*esize*qsize)) for _ in range(1)],
-#             [random.choice(range(csize*esize*qsize)) for _ in range(10)],
-#             [random.choice(range(csize*esize*qsize)) for _ in range(20)],
-#             [random.choice(range(csize*esize*qsize)) for _ in range(30)],
-#             [random.choice(range(csize*esize*qsize)) for _ in range(40)],
-#             [random.choice(range(csize*esize*qsize)) for _ in range(50)],
-#             [random.choice(range(csize*esize*qsize)) for _ in range(60)],
-#             [random.choice(range(csize*esize*qsize)) for _ in range(70)]
-#             ]
     
     return [2, cset[item]] # slack state and choice set
 
@@ -88,9 +75,14 @@ for j,t in enumerate(TEST_SET):
         util = Util(para)
         
         R, P, vi[j] = expt.Build_Problem(t)
-        t_start = time.time()
+        _t_start = time.time()
         vi[j].run()
-        time_consumed_lis.append(time.time()-t_start)
+        _t_consumed = time.time() - _t_start
+#         if t=='MDP':
+#             time_consumed_lis.append(_t_consumed)
+#         else:
+#             time_consumed_lis.append(vi[j].run_time)
+        time_consumed_lis.append(_t_consumed)
         
         exp_value_lis.append( sum(vi[j].V)*1.0/(csize*esize*qsize) )
         

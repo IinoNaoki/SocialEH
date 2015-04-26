@@ -7,6 +7,7 @@ Created on 15 Apr, 2015
 from util import Util
 import numpy as np
 import random
+import time
 
 # from parameters import Parameters
 
@@ -43,6 +44,8 @@ class BaseLineScheme(object):
         
         self.util = Util(paras)
         
+        self.run_time = 0.0
+        
         if self.disc < 1:
             self.epsi = epsilon * (1 - self.disc) / self.disc
         else: # discount == 1
@@ -62,6 +65,7 @@ class BaseLineScheme(object):
         return pol
     
     def _random_actions(self):
+        t_start = time.time()
         pol = np.zeros(self.S, int)
         for ic in range(self.CON_CSIZE):
             for ie in range(self.CON_ESIZE):
@@ -71,9 +75,11 @@ class BaseLineScheme(object):
                         pol[ind] = random.choice([0,1]) # charge
                     elif (ic in self.SET_MESSENGER) and (iq>0) and (ie>0):
                         pol[ind] = random.choice([0,2]) # sending content
+        self.run_time = time.time()-t_start
         return pol
     
     def _threshold_random(self):
+        t_start = time.time()
         
         if len(self.LIST_EXTRA_PARA)!=0:
             SLACK_STATE = self.LIST_EXTRA_PARA[0] #slack state
@@ -166,6 +172,7 @@ class BaseLineScheme(object):
                                     act_lis[self.util.Trans_tuple_to_index([c1,ep,qp])] = 0
         
 #         print act_lis
+        self.run_time = time.time()-t_start
         return act_lis
                     
     def _greedy_actions(self):
