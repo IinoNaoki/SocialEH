@@ -78,11 +78,10 @@ for j,t in enumerate(TEST_SET):
         _t_start = time.time()
         vi[j].run()
         _t_consumed = time.time() - _t_start
-#         if t=='MDP':
-#             time_consumed_lis.append(_t_consumed)
-#         else:
-#             time_consumed_lis.append(vi[j].run_time)
-        time_consumed_lis.append(_t_consumed)
+        if t=='MDP':
+            time_consumed_lis.append(_t_consumed)
+        else:
+            time_consumed_lis.append(vi[j].run_time)
         
         exp_value_lis.append( sum(vi[j].V)*1.0/(csize*esize*qsize) )
         

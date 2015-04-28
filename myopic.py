@@ -79,7 +79,6 @@ class BaseLineScheme(object):
         return pol
     
     def _threshold_random(self):
-        t_start = time.time()
         
         if len(self.LIST_EXTRA_PARA)!=0:
             SLACK_STATE = self.LIST_EXTRA_PARA[0] #slack state
@@ -95,6 +94,7 @@ class BaseLineScheme(object):
         cp_CHOICE_SET = [i for i in CHOICE_SET]
         random.shuffle(cp_CHOICE_SET)
         
+        t_start = time.time()
         while len(cp_CHOICE_SET)!=0:
             _ind = cp_CHOICE_SET.pop()
 
@@ -107,16 +107,16 @@ class BaseLineScheme(object):
                 c_low, c_high = max(c1-SLACK_STATE,0), min(c1+SLACK_STATE,self.CON_CSIZE-1)
                 e_low, e_high = max(e1-1,0), min(e1+SLACK_STATE,self.CON_ESIZE-1) # non-symmetric, since e only decreases by 1 in this case
                 q_low, q_high = max(q1-1,0), min(q1+SLACK_STATE,self.CON_QSIZE-1) # same as above
-                srange = []
                 for _sc in range(c_low, c_high+1):
                     for _se in range(e_low, e_high+1):
                         for _sq in range(q_low, q_high+1):
-                            srange.append(self.util.Trans_tuple_to_index([_sc,_se,_sq]))
-                for _ind1 in srange:
-                    _sum0 += self.TransMat[0][_ind][_ind1] * _V[_ind1]
-                    _sum1 += self.TransMat[1][_ind][_ind1] * _V[_ind1]
+                            _ind1 = self.util.Trans_tuple_to_index([_sc,_se,_sq])
+                            _sum0 += self.TransMat[0][_ind][_ind1] * _V[_ind1]
+                            _sum1 += self.TransMat[1][_ind][_ind1] * _V[_ind1]
+                    
                 v0 = self.RewardMat[_ind][0] + self.CON_DISCOUNT * _sum0
                 v1 = self.RewardMat[_ind][1] + self.CON_DISCOUNT * _sum1
+                
                 if v0 > v1:
                     _V[_ind] = v0
                     for cp in range(c1,self.CON_CSIZE-len(self.SET_MESSENGER)):
@@ -135,6 +135,7 @@ class BaseLineScheme(object):
                                     act_lis[self.util.Trans_tuple_to_index([cm,em,q1])] = 1
                                 else:
                                     act_lis[self.util.Trans_tuple_to_index([cm,em,q1])] = 0
+                
             elif (c1 in self.SET_MESSENGER) and (q1>0) and (e1>0):
                 # with msger
                 # 0 and 2
@@ -142,14 +143,12 @@ class BaseLineScheme(object):
                 c_low, c_high = max(c1-SLACK_STATE,0), min(c1+SLACK_STATE,self.CON_CSIZE-1)
                 e_low, e_high = max(e1-1,0), min(e1+SLACK_STATE,self.CON_ESIZE-1) # non-symmetric, since e only decreases by 1 in this case
                 q_low, q_high = max(q1-1,0), min(q1+SLACK_STATE,self.CON_QSIZE-1) # same as above
-                srange = []
                 for _sc in range(c_low, c_high+1):
                     for _se in range(e_low, e_high+1):
                         for _sq in range(q_low, q_high+1):
-                            srange.append(self.util.Trans_tuple_to_index([_sc,_se,_sq]))
-                for _ind1 in srange:
-                    _sum0 += self.TransMat[0][_ind][_ind1] * _V[_ind1]
-                    _sum2 += self.TransMat[2][_ind][_ind1] * _V[_ind1]
+                            _ind1 = self.util.Trans_tuple_to_index([_sc,_se,_sq])
+                            _sum0 += self.TransMat[0][_ind][_ind1] * _V[_ind1]
+                            _sum2 += self.TransMat[2][_ind][_ind1] * _V[_ind1]
                 v0 = self.RewardMat[_ind][0] + self.CON_DISCOUNT * _sum0
                 v2 = self.RewardMat[_ind][2] + self.CON_DISCOUNT * _sum2
                 if v0 > v2:
@@ -172,9 +171,9 @@ class BaseLineScheme(object):
                                     act_lis[self.util.Trans_tuple_to_index([c1,ep,qp])] = 0
         
 #         print act_lis
-        self.run_time = time.time()-t_start
+        self.run_time = time.time() - t_start
         return act_lis
-                    
+
     def _greedy_actions(self):
         pol = np.zeros(self.S, int)
         for ic in range(self.CON_CSIZE):

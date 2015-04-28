@@ -46,8 +46,8 @@ plt.setp(labels, rotation=90)
 pp = PdfPages('RndPrecs_figure1.pdf')
 plt.savefig(pp, format='pdf')
 pp.close()
-
-
+ 
+ 
 plt.figure(figsize=(4.5,5.0))
 grid(True, which="both")
 plot(x_axis,steady_chg_r[0],color='blue',markerfacecolor='none', markeredgecolor='blue', marker='s',markersize=8,label='GRD')
@@ -63,8 +63,8 @@ plt.setp(labels, rotation=90)
 pp = PdfPages('RndPrecs_figure3.pdf')
 plt.savefig(pp, format='pdf')
 pp.close()
- 
- 
+  
+  
 plt.figure(figsize=(4.5,5.0))
 grid(True, which="both")
 plot(x_axis,steady_snd_r[0],color='blue',markerfacecolor='none', markeredgecolor='blue', marker='s',markersize=8,label='GRD')
@@ -85,7 +85,6 @@ plt.figure(figsize=(4.5,5.0))
 grid(True, which="both")
 # plot(x_axis,time_con[0],color='blue',markerfacecolor='none', markeredgecolor='blue', marker='s',markersize=8,label='GRD')
 # plot(x_axis,[time_con[2][i]/time_con[1][i] for i in range(len(time_con[1]))],color='blue',markerfacecolor='none', markeredgecolor='blue', marker='s',markersize=8,label='COMPARE')
-plot(x_axis,time_con[3],color='blue',markerfacecolor='none', markeredgecolor='blue', marker='s',markersize=8,label='MDP!')
 plot(x_axis,time_con[1],color='black',markerfacecolor='none', markeredgecolor='black', marker='x',markersize=8,label='RND')#, linestyle='')
 plot(x_axis,time_con[2],color='magenta',markerfacecolor='none', markeredgecolor='magenta', marker='d',markersize=8,label='THR')#, linestyle='')
 xlabel('Randomization precision',fontsize=14)
