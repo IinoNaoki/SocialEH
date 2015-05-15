@@ -47,7 +47,7 @@ plt.savefig(pp, format='pdf')
 pp.close()
 
 
-plt.figure(figsize=(6.0,5.0))
+plt.figure(figsize=(4.5,5.0))
 grid(True, which="both")
 plot(x_axis,steady_chg_r[0],color='red',markerfacecolor='none', markeredgecolor='red', marker='o',markersize=8,label='MDP (Charge)',linestyle='--')
 plot(x_axis,steady_chg_r[1],color='green',markerfacecolor='none', markeredgecolor='green', marker='^',markersize=8,label='CAS (Charge)',linestyle='--')
