@@ -34,7 +34,7 @@ TEST_SET = ['MDP', 'CAS', 'GREEDY', 'RANDOM', 'THRESHOLDRANDOM']
 TEST_RANGE = [0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0]
 
 def _c_price_gen(_start):
-    return [-1.0*_start**2.0 for _ in range(len(s_charger))]
+    return [-1.0*(_start+i)**2.0 for i in range(len(s_charger))]
 
 for j,t in enumerate(TEST_SET):
     # to store results

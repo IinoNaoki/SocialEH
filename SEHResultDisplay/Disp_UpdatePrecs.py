@@ -32,7 +32,7 @@ for j,t in enumerate(TEST_SET):
 
 plt.figure(figsize=(4.5,5.0))
 grid(True, which="both")
-# plot(x_axis,exp_v[0],color='blue',markerfacecolor='none', markeredgecolor='blue', marker='s',markersize=8,label='GRD')
+plot(x_axis,exp_v[0],color='blue',markerfacecolor='none', markeredgecolor='blue', marker='s',markersize=8,label='GRD')
 plot(x_axis,exp_v[1],color='black',markerfacecolor='none', markeredgecolor='black', marker='x',markersize=8,label='RND')#, linestyle='')
 plot(x_axis,exp_v[2],color='magenta',markerfacecolor='none', markeredgecolor='magenta', marker='d',markersize=8,label='THR')#, linestyle='')
 xlabel('Update precision',fontsize=14)
